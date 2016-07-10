@@ -1,0 +1,88 @@
+.tab-container{
+position:absolute;
+top:25%;
+left:5%;
+width:20%;
+height:50%;
+padding:2% 5% 0% 5%;
+border-right:1px solid #fff;
+}
+
+.desc-container{
+position:absolute;
+top:23%;
+left:40%;
+width:40%;
+height:50%;
+padding:2% 3% 2% 5%;
+font-family:"Source Sans Pro";
+font-size:17px;
+color:#fff;
+overflow-y:auto;
+background-color:rgba(2,73,134,0.3)
+}
+.desc-container p{
+color:#000;
+font-size:17px;
+}
+
+.tab{
+width:100%;
+height:10%;
+margin-bottom:5%;
+padding:2% 0% 2% 0%;
+background-color:#024986;
+border:1px solid  #fff;
+font-size:16px;
+font-family:"Source Sans Pro";
+color:#fff;
+opacity:1;
+}
+.tab:hover{
+background-color:#fff;
+color:#024986;
+}
+.active{
+background-color:#fff;
+color:#024986;
+}
+
+.show{
+display:default;
+}
+.dont-show{
+display:none;
+}
+
+#marquee-container{
+position:absolute;
+background-color:#024986;
+width:40%;
+height:2%;
+padding:1%;
+top:93%;
+left:30%;
+border-radius:10px;
+font-size:14px;
+color:#fff;
+}
+
+@media only screen and (orientation:portrait){
+.tab{
+font-size:14px;
+}
+.desc-container{
+position:absolute;
+top:25%;
+left:40%;
+width:45%;
+height:40%;
+padding:2% 3% 0% 5%;
+overflow-y:auto;
+font-family:"Source Sans Pro";
+background-color:rgb(2,73,134,0.3);
+}
+#marquee-container{
+top:85%;
+}
+}

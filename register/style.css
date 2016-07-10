@@ -1,0 +1,311 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+body
+{
+	font-family: Bitter, serif;
+	font-size: 14px;
+	background-color:#024986;
+}
+
+h1
+{
+	font-family: Roboto,sans-serif;
+	font-size: 32px;
+	color: #000;
+}
+
+label
+{
+	font-family: Bitter,serif;
+	margin-right: 10px;
+	font-size: 14px;
+	color: #fff;
+}
+
+p
+{
+	font-size: 18px;
+	color: #fff;
+}
+
+.radio-text
+{
+	color: #fff;
+	display: inline;
+	margin-top: 30px;
+	margin-left: 10px;
+}
+
+form
+{
+	padding: 20px;
+	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: hidden;
+	margin-right: 45px;
+}
+
+input
+{
+	font-family: Bitter, serif;
+	font-size: 14px;
+}
+
+span
+{
+	display: block;
+	overflow: hidden;
+	margin-right: 15px;
+}
+
+em
+{
+	color: #ce303f;
+	font-style: normal;
+	font-size: 22px;
+}
+
+input[type="text"], input[type="password"]
+{
+	display: block;
+	background: #fff;
+	padding: 5px;
+	padding-right: 0px;
+	margin: 15px 10px 40px 10px;
+	width: 100%;
+	color: #000;
+	transition: background  0.3s, color 0.3s;
+	border: 1px solid #000;
+}
+
+input[type="text"]:hover, input[type="text"]:focus,
+input[type="password"]:hover, input[type="password"]:focus,
+textarea:hover, textarea:focus
+{
+	background: #333;
+	color: #fff;
+}
+
+input[type="radio"]
+{
+	font-size: 24px;
+	color: #fff;
+	margin-left: 30px;
+}
+input[type="checkbox"]
+{
+	font-size: 24px;
+	color: #fff;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+select
+{
+	font-family: Bitter, serif;
+	font-size: 14px;
+	display: block;
+	background: #fff;
+	padding: 5px;
+	margin: 10px 10px 30px 10px;
+	width: 250px;
+	color: #000;
+}
+
+.form-container
+{
+	float:left;
+	width: 40%;
+	height: 100%;
+}
+
+.misc-container
+{
+	float:left;	
+	width: 60%;
+	height: 100%;
+	top: 0;
+	right: 0;
+}
+
+.form-container-padding
+{
+	padding: 50px;
+	overflow: hidden;
+}
+
+.misc-container-padding
+{
+	margin-top: 70px;
+	padding: 70px;
+	overflow: hidden;
+}
+
+.clear,
+input[type="submit"].clear
+{
+	clear: both;
+	display: block;
+	margin-top: 40px;
+}
+
+.hidden,
+input[type="submit"].hidden
+{
+	display: none;
+}
+
+input[type="text"].error,
+input[type="password"].error,
+input[type="file"].error
+{
+	background: #ce303f;
+	background-image: url('error.png');
+	background-repeat: no-repeat;
+	background-position: center right;
+	color: #fff;
+}
+
+input[type="text"].validated,
+textarea.validated,
+input[type="password"].validated,
+input[type="file"].validated
+{
+	background: #8fb944;
+	color: #fff;
+}
+
+.tooltip
+{
+	display:none;
+	padding: 10px;
+	font-size: 14px;
+	color: #fff;
+	width: 60%;
+	color: #000;
+	transition: color 1s, background 1s;
+}
+.show
+{
+	display: block;
+	color: #000;
+	background: #fff;
+}
+
+.passportphoto
+{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 30px;
+	transition: background-image 1s;
+}
+
+input[type="file"]
+{
+	width: 100%;
+	margin-top: 30px;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 5px;
+}
+
+input[type="submit"]
+{
+	font-family: Roboto;
+	padding: 10px;
+	font-size: 18px;
+	width: 170px;
+	color: #fff;
+	display: block;
+	margin-top: 40px;
+	float: right;
+	background: #000;
+	transition: background 0.3s, color 0.3s, border 0.3s;
+}	
+
+input[type="submit"]:disabled,
+input[type="submit"]:disabled:hover
+{
+	background: #ce303f;
+	cursor: default;
+	color: #fff;
+}
+
+input[type="submit"]:hover
+{
+	background: #8fb944;
+	color: #fff;
+	cursor: pointer;
+}
+
+.separate-them{
+	width:100%;
+	height:110px;
+}
+@media only screen and (max-device-width: 480px) {
+.separate-them{
+	width:100%;
+	height:120px;
+}
+	}
+	
+	#header{
+position:absolute;
+width:100%;
+height:86px;
+top:0;
+left:0;
+background:#fff;
+opacity:0.95;
+}
+
+#logo{
+position:absolute;
+width:59px;
+height:74px;
+top:6px;
+left:30px;
+background-image:url('../website/sensors_logo.png');
+background-size:100% 100%;
+}
+
+#page{
+position:absolute;
+left:100px;
+top:28px;
+width:auto;
+height:auto;
+padding:2px 5px 2px 5px;
+opacity:0.95;
+background-color:#024986;
+color:#fff;
+font-size:18px;
+font-family:"Source Sans Pro";
+}
+
+#link-container{
+position:absolute;
+top:28px;
+right:30px;
+}
+#link-container a{
+text-decoration:none;
+font-size:18px;
+font-family:"Source Sans Pro";
+color:#aaa;
+margin-left:10px;
+transition:color 0.5s;
+-webkit-transition:0.5s;
+}
+#link-container a:hover{
+color:#024986;
+}

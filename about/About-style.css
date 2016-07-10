@@ -1,0 +1,21 @@
+#about-content{
+position:absolute;
+width:60%;
+height:70%;
+left:20%;
+top:120px;
+padding:0px 20px 10px 20px;
+color:#fff;
+font-family:"Source Sans Pro";
+font-size:18px;
+overflow:auto;
+background-color:rgba(2,73,134,0.3)
+}
+
+@media only screen and (orientation:portrait){
+#about-content{
+width:80%;
+height:75%;
+left:10%;
+}
+}

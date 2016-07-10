@@ -1,0 +1,54 @@
+#map-container{
+position:absolute;
+top:350px;
+left:25%;
+width:50%;
+height:50%;
+margin-bottom:50px;
+}
+
+.title{
+position:absolute;
+top:120px;
+width:100%;
+text-align:center;
+color:#fff;
+font-family:"Source Sans Pro";
+font-size:40px;
+margin:0;
+}
+
+#contact-div{
+position:absolute;
+top:180px;
+width:100%;
+height:auto;
+color:#fff;
+}
+#contact-div  h2{
+font-family:"Source Sans Pro";
+font-size:20px;
+color:#fff;
+}
+
+.team{
+position:relative;
+float:left;
+height:100%;
+width:25%;
+text-align:center;
+font-color:#000;
+}
+
+@media only screen and (orientation:portrait){
+#contact-div  h2{
+font-size:14px;
+}
+#contact-div p{
+font-size:10px;
+}
+#map-container{
+width:70%;
+left:15%;
+}
+}

@@ -1,0 +1,40 @@
+#team-container{
+position:absolute;
+top:120px;
+width:1025px;
+max-width:80%;
+height:70%;
+margin-left:10%;
+overflow:auto;
+background-color:rgba(2,73,134,0.3);
+}
+#team-container h1{
+color:#fff;
+text-align:left;
+}
+
+.pic{
+float:left;
+margin:25px 25px;
+width:150px;
+height:200px;
+padding:25px 25px;
+background-color:#024986;
+}
+
+.name{
+margin-top:5px;
+font-family:"Source Sans Pro";
+font-size:17px;
+}
+.designation{
+font-family:"Source Sans Pro";
+font-size:13px;
+color:#fff;
+}
+
+@media only screen and (orientation:portrait){
+#team-container{
+max-width:80%;
+}
+}
