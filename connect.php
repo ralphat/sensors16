@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "sensom6o_admin";
-$password = "hihowareyou";
+$password = "";
 $dbname = "sensom6o_sensors";
 
 // Create connection
