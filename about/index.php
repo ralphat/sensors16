@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="initial-scale=0.5" />
 
-	<title>Sensors'16</title>
+	<title>Sensors'17</title>
 	<meta name="author" content="Sarwesh Krishnan" />
 	<meta name="description" content="Instrumentation and Contol Engineering department, NITT symposium website." />
 	<meta name="keywords"  content="sensors,symposium,NITT,ICE,instrumentation,control" />
@@ -45,21 +45,20 @@
 </div>
 
 <div id="about-content">
-<p>Sensors is the annual technical symposium of the Instrumentation and Control Department of NIT Trichy. Started in 1997, it has for 18 years been delivering a variety of events to the niche world of instrumentation and control. For the past few years, Sensors has featured guest lecturers from the Centre of Development of Advanced Computing, ISRO, BHEL and Intel India. In addition to this we also have hosted a wide variety of workshops for students. A few of them are Flight Instrumentation, Biomedical Instrumentation, and more.</p>
-<p>This year Sensors aims to make itself bigger by presenting to students workshops of never seen before calibre. The technical workshops are Gesture Controlled Robotic Manipulator, Machine Learning Using Python, Brain Waves Robotics and a Hexapod. All of them focus on core concepts that are fundamental to control and instrumentation. In addition to this there are two more non-technical workshops. The first one is a Data Science and Business Analytics workshop that focuses on building predictive models using Neural Networks. The second one is a design workshop where participants will learn to use Photoshop and Illustrator for motion graphics alongside other skills.</p>
-<p>Apart from the workshops there are events like Paper Presentation, Sensor Design, Encipher, Moore’s Labyrinth and Quiz for students to take part in. If you want the cache of your knowledge to expand and if you want to increase your skillset, Sensors ’16 is the right platform for all you aspiring individuals. Sense, control, and let the world be yours.</p>
+<p>Sensors is the annual technical symposium of the Instrumentation and Control Department of NIT Trichy. Started in 1997, it has for 19 years been delivering a variety of events to the niche world of instrumentation and control. For the past few years, Sensors has featured guest lecturers from the Centre of Development of Advanced Computing, ISRO, BHEL and Intel India. In addition to this we also have hosted a wide variety of workshops for students. A few of them are Flight Instrumentation, Biomedical Instrumentation, and more.</p>
+<p>This year Sensors aims to make itself bigger by presenting to students workshops of never seen before calibre. There are both technical and non-technical workshops in this edition of Sensors. Apart from the workshops there are events like Paper Exposition, Codequest and Sensors General Quiz, to name a few, for students to show-off their skills in. If you want the cache of your knowledge to expand and if you want to increase your skillset, Sensors ’17 is the right platform for all you aspiring individuals! Sense, control, and let the world be yours!</p>
 </div>
 
 </div>
 
 <div class="fb-like" style="position:absolute;top:94.5%;right:4%;" data-href="https://www.facebook.com/sensorsNITTrichy/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
-
+<!--
 <div id="form-container">
 <?php
-if(isset($_COOKIE['SID']))
-echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
-else
-echo '<button id="login">Login</button> / <a target="_blank" href="../register"> Register</a>';
+//if(isset($_COOKIE['SID']))
+//echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
+//else
+//echo '<button id="login">Login</button> / <a target="_blank" href="../register"> Register</a>';
 ?>
 </div>
 	
@@ -77,7 +76,7 @@ echo '<button id="login">Login</button> / <a target="_blank" href="../register">
 <div id="return">Return to previous page</div>
 </form>
 </div>
-
+-->
 </body>
 
 <script>

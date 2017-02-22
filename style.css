@@ -1,62 +1,50 @@
-#background-container{ 
-position:absolute; 
-background-image:url("./website/website_bgm.jpg");
-width:100%;
-height:100%;
-background-size:100% 100%;
-background-repeat:no-repeat;
+body,html{
+height: 100%;
+margin: 0;
 }
 
-#about-link{
-position:absolute;
-width:11.45%;
-height:21%;
-top:28.4%;
-left:4.40%;
-background-size:100% 100%;
-background-image:url("./website/box-01.png");
+.parallax {
+    background-image: url("./website/website.png");
+    min-height: 1000px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#workshops-link{
+#icea_logo{
+position: absolute;
+top: 2%;
+left: 85%;
+height: 30%;
+}
+
+#workshops-link, #events-link, #about-link, #contact-link{
 position:absolute;
-width:13.16%;
-height:27.5%;
-top:54.05%;
-left:20.75%;
-background-size:100% 100%;
-background-image:url("./website/multi-01.png");
+width:31.5%;
+height: 55%;
+top: -10px;
+left: 18.8%;
+opacity: 0.5;
 }
 
 #events-link{
-position:absolute;
-width:8.7%;
-height:27%;
-top:42.45%;
-left:45.3%;
-background-size:100% 100%;
-background-image:url("./website/bulb-01.png");
+left: 49.7%;
 }
 
-#team-link{
-position:absolute;
-width:8.5%;
-height:27.85%;
-top:24.65%;
-left:67.73%;
-background-size:100% 100%;
-background-image:url("./website/person-01.png");
+#about-link{
+top: 49%;
+left: 19%;
 }
 
 #contact-link{
-position:absolute;
-width:14.25%;
-height:32.75%;
-top:51.7%;
-left:81.5%;
-background-size:100% 100%;
-background-image:url("./website/wire-01.png");
+top: 49%;
+left: 49.5%;
 }
 
+#workshops-link:hover, #events-link:hover, #about-link:hover, #contact-link:hover{
+opacity: 1;
+}
 
 #uniq{
 position:absolute;
@@ -98,61 +86,7 @@ text-decoration:underline;
 display:block;
 }
 
-@media only screen and (orientation:portrait){
-#background-container{
-width:200%;
-height:100%;
-}
 
-#about-link{
-position:absolute;
-width:22.9%;
-height:21%;
-top:28.4%;
-left:8.80%;
-background-size:100% 100%;
-background-image:url("./website/box-01.png");
-}
-
-#workshops-link{
-position:absolute;
-width:26.32%;
-height:27.5%;
-top:54.05%;
-left:41.5%;
-background-size:100% 100%;
-background-image:url("./website/multi-01.png");
-}
-
-#events-link{
-position:absolute;
-width:17.4%;
-height:27%;
-top:42.45%;
-left:90.6%;
-background-size:100% 100%;
-background-image:url("./website/bulb-01.png");
-}
-
-#team-link{
-position:absolute;
-width:17%;
-height:27.85%;
-top:24.65%;
-left:135.46%;
-background-size:100% 100%;
-background-image:url("./website/person-01.png");
-}
-
-#contact-link{
-position:absolute;
-width:28.5%;
-height:32.75%;
-top:51.7%;
-left:163%;
-background-size:100% 100%;
-background-image:url("./website/wire-01.png");
-}
 
 #fbLike{
 left:180%;

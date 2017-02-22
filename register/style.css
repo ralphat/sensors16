@@ -258,7 +258,7 @@ input[type="submit"]:hover
 }
 	}
 	
-	#header{
+#header{
 position:absolute;
 width:100%;
 height:86px;
@@ -273,8 +273,8 @@ position:absolute;
 width:59px;
 height:74px;
 top:6px;
-left:30px;
-background-image:url('../website/sensors_logo.png');
+left:-10px;
+background-image:url('../website/sensors17_logo.jpg');
 background-size:100% 100%;
 }
 

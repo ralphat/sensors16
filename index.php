@@ -6,16 +6,16 @@
 	
 	<meta name="viewport" content="height=device-height, initial-scale=0.5, maximum-scale=1"/>
 
-	<title>Sensors'16</title>
+	<title>Sensors'17</title>
 	<meta name="author" content="Sarwesh Krishnan" />
 	<meta name="description" content="Instrumentation and Contol Engineering department, NITT symposium website." />
 	<meta name="keywords"  content="sensors,symposium,NITT,ICE,instrumentation,control" />
 	<meta name="Resource-type" content="Document" />
 	
-        <link rel = "shortcut icon" href = "./tab_image.ico"/>
-	<link type="text/css" rel="stylesheet" href="normalise.css" />
-	<link type="text/css" rel="stylesheet" href="common.css" />
-	<link type="text/css" rel="stylesheet" href="style.css" />
+    <link rel = "shortcut icon" href = "./tab_image.ico"/>
+	<!--<link type="text/css" rel="stylesheet" href="normalise.css" />
+	<link type="text/css" rel="stylesheet" href="common.css" />-->
+	<link type="text/css" rel="stylesheet" href="style_edited.css" />
         
 
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -29,25 +29,50 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1063823873635962";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
+<!--
 <div id="form-container">
 <?php
-if(isset($_COOKIE['SID']))
-echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
-else
-echo '<button id="login">Login</button> / <a target="_blank" href="./register"> Register</a>';
+//if(isset($_COOKIE['SID']))
+//echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
+//else
+//echo '<button id="login">Login</button> / <a target="_blank" href="./register"> Register</a>';
 ?>
 </div>
+-->
+<div class="parallax">
+	<!--<a target="_blank" href="http://www.uniqtechnologies.co.in/"><img id="uniq" src="./uniq/uniq.jpg" /></a>-->
+	<div><img id="icea_logo" src="./website/icea_logo.png" /></div>
+	<div><img id="sensors_middle" src="./website/sensors_middle.png" /></div>
 
-	<div id="background-container"></div>
-	<a id="about-link" href="./about"></a>
-	<a id="workshops-link" href="./workshops"></a>	
-	<a id="events-link" href="./events"></a>
-	<a id="team-link" href="./team"></a>
-	<a id="contact-link" href="./contact"></a>
+	<a href="./workshops"><img id="workshops-link" src="./website/workshops.png"></a>	
+	<a href="./events"><img id="events-link" src="./website/events.png"></a>
+	<a href="./about"><img id="about-link" src="./website/about.png"></a>
+	<a href="./contact"><img id="contact-link" src="./website/contact.png"></a>
+
+<div id="sca">
+	<h1>Sense&nbsp;.&nbsp;Control&nbsp;.&nbsp;Actuate&nbsp;.</h1>
+</div>
 	
-<a target="_blank" href="http://www.uniqtechnologies.co.in/"><img id="uniq" src="./uniq/uniq.jpg" /></a>
-	
+</div>
+<!--
+<div style="height:1000px;background-color:red;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+<div style="height:1000px;background-color:green;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+<div style="height:1000px;background-color:black;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+-->
+
+<!--
 <div id="login-container" class="hide">
 <form id="login-form">
 <div class="label"><b>Email ID or Sensors ID</b></div>
@@ -62,7 +87,8 @@ echo '<button id="login">Login</button> / <a target="_blank" href="./register"> 
 <div id="return">Return to previous page</div>
 </form>
 </div>
-
+-->
+<!--
 <div id="uniq-container">
 <div id="uniq-link">
 <hr>
@@ -73,10 +99,11 @@ echo '<button id="login">Login</button> / <a target="_blank" href="./register"> 
 <hr>
 <div class="fb-like" data-href="https://www.facebook.com/uniqtechnologies/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
 </div>
-<div>UNIQ technologies</div>
+<div>Sponsor Name Here</div>
 </div>
-
+-->
 <div class="fb-like" id="fbLike" style="position:absolute;top:94.5%;right:4%;" data-href="https://www.facebook.com/sensorsNITTrichy/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+
 
 </body>
 <script>

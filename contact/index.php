@@ -5,8 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="initial-scale=0.5" />
 
-	<title>Sensors'16</title>
-	<meta name="author" content="Sarwesh Krishnan" />
+	<title>Sensors'17</title>
 	<meta name="description" content="Instrumentation and Contol Engineering department, NITT symposium website." />
 	<meta name="keywords"  content="sensors,symposium,NITT,ICE,instrumentation,control" />
 	<meta name="Resource-type" content="Document" />
@@ -46,24 +45,24 @@
 <h1 class="title">For queries, kindly contact</h1>
 <div id="contact-div">
 		<div class="team">
-		<h2>Monish Vasu</h2>
-		<p style="color:#000">Overall coordinator</p>
-		<p><b>+91 95660 94829</b></p>	
+		<h2>Vasanth</h2>
+		<p style="color:#ffe4b5">Overall coordinator</p>
+		<p><b>+91 91763 85387</b></p>	
 		</div>
 		<div  class="team">
-		<h2>Hani Abdul Gafoor</h2>
-		<p style="color:#000">Chairman, ICEA</p>
-		<p><b>+91 95669 67716</b></p>	
+		<h2>Anurudh Charummel</h2>
+		<p style="color:#ffe4b5">Chairman, ICEA</p>
+		<p><b>+91 96778 52941</b></p>	
 		</div>
 		<div class="team">
-		<h2>Gurunamasivayam</h2>
-		<p style="color:#000">Head, Publicity</p>
-		<p><b>+91 95660 81815</b></p>	
+		<h2>S Narendar</h2>
+		<p style="color:#ffe4b5">Head, Workshops</p>
+		<p><b>+91 94449 69493 </b></p>	
 		</div>
 		<div class="team">
-		<h2>Deepak S</h2>
-		<p style="color:#000">Head, Workshops</p>
-		<p><b>+91 99620 30592</b></p>	
+		<h2>Pradeep A</h2>
+		<p style="color:#ffe4b5">Technical Secretary</p>
+		<p><b>+91 96007 29063</b></p>	
 		</div>
 </div>
 <div class="line"></div>
@@ -71,30 +70,6 @@
 </div>
 
 <div class="fb-like" style="position:absolute;top:94.5%;right:4%;" data-href="https://www.facebook.com/sensorsNITTrichy/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
-
-<div id="form-container">
-<?php
-if(isset($_COOKIE['SID']))
-echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
-else
-echo '<button id="login">Login</button> / <a target="_blank" href="../register"> Register</a>';
-?>
-</div>
-	
-<div id="login-container" class="hide">
-<form id="login-form">
-<div class="label"><b>Email ID or Sensors ID</b></div>
-<input type="text" name="username" id="username" />
-<div class="label"><b>Password</b></div>
-<input type="password" name="pass" id="pass" />
-<button name="signin" id="signin">Sign In</button>
-<label id="error" style="color:red;display:none;padding:5px;">Invalid username or password</label>
-<label id="success" style="color:green;display:none;padding:5px;">Login successful</label>
-<br />
-<div class="label">New user? Click here to <a href="../register">register</a></div>
-<div id="return">Return to previous page</div>
-</form>
-</div>
 
 </body>
 

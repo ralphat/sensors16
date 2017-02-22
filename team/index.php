@@ -5,8 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="initial-scale=0.5" />
 
-	<title>Sensors'16</title>
-	<meta name="author" content="Sarwesh Krishnan" />
+	<title>Sensors'17</title>
 	<meta name="description" content="Instrumentation and Contol Engineering department, NITT symposium website." />
 	<meta name="keywords"  content="sensors,symposium,NITT,ICE,instrumentation,control" />
 	<meta name="Resource-type" content="Document" />
@@ -46,94 +45,95 @@
 <div id="team-bg"></div>
 <div id="team-container">
 <div class="pic">
-<img src="./team/hani.jpg" width="150" height="150" />
-<div class="name">Hani</div>
+<img src="./team/anurudh.jpg" width="150" height="150" />
+<div class="name">Anurudh Charummel</div>
 <div class="designation">Chairman, ICEA</div>
 </div>
 <div class="pic">
-<img src="./team/monish.jpg" width="150" height="150" />
-<div class="name">Monish</div>
+<img src="./team/vasanth.jpg" width="150" height="150" />
+<div class="name">Vasanth</div>
 <div class="designation">Overall Coordinator</div>
 </div>
 <div class="pic">
-<img src="./team/renuka.jpg" width="150" height="150" />
-<div class="name">Renuka</div>
+<img src="./team/sajith.jpg" width="150" height="150" />
+<div class="name">Sajith AB</div>
+<div class="designation">Head, Organising Committee</div>
+</div>
+<div class="pic">
+<img src="./team/vishwa.jpg" width="150" height="150" />
+<div class="name">Vishwarupa</div>
 <div class="designation">Treasurer</div>
 </div>
 <div class="pic">
-<img src="./team/deepak.jpg" width="150" height="150" />
-<div class="name">Deepak</div>
+<img src="./team/vamshi.jpg" width="150" height="150" />
+<div class="name">Vamshi</div>
+<div class="designation">Head, Marketing</div>
+</div>
+<div class="pic">
+<img src="./team/pradeep.jpg" width="150" height="150" />
+<div class="name">A Pradeep</div>
+<div class="designation">Technical Secretary</div>
+</div>
+<div class="pic">
+<img src="./team/ria.jpg" width="150" height="150" />
+<div class="name">Ria</div>
+<div class="designation">Editor, ICEA Newsletter</div>
+</div>
+<div class="pic">
+<img src="./team/narendar.jpg" width="150" height="150" />
+<div class="name">S. Narendar</div>
 <div class="designation">Head, Workshops</div>
 </div>
 <div class="pic">
-<img src="./team/lakshmi.jpg" width="150" height="150" />
-<div class="name">Lakshmi</div>
+<img src="./team/akhil.jpg" width="150" height="150" />
+<div class="name">N Akhil Sai Kiran</div>
 <div class="designation">Head, Events</div>
 </div>
 <div class="pic">
-<img src="./team/subashree.jpg" width="150" height="150" />
-<div class="name">Subashree</div>
+<img src="./team/apuroop.jpg" width="150" height="150" />
+<div class="name">M Apuroop</div>
+<div class="designation">Co-Head, Events</div>
+</div>
+<div class="pic">
+<img src="./team/arvind.jpg" width="150" height="150" />
+<div class="name">V. Arvind</div>
 <div class="designation">Head, Public Relations</div>
 </div>
 <div class="pic">
-<img src="./team/kranthi.jpg" width="150" height="150" />
-<div class="name">Kranthi</div>
-<div class="designation">Head, Public Relations</div>
+<img src="./team/renuka.jpg" width="150" height="150" />
+<div class="name">Renuka Rajkumar</div>
+<div class="designation">Head, Public Relations & Hospitality</div>
 </div>
 <div class="pic">
-<img src="./team/sarwesh.jpg" width="150" height="150" />
-<div class="name">Sarwesh</div>
-<div class="designation">Head, CSG</div>
-</div>
-<div class="pic">
-<img src="./team/tanmai.jpg" width="150" height="150" />
-<div class="name">Tanmai</div>
+<img src="./team/amara.jpg" width="150" height="150" />
+<div class="name">Akhilesa Amara</div>
 <div class="designation">Head, Hospitality</div>
 </div>
 <div class="pic">
-<img src="./team/soundarya.jpg" width="150" height="150" />
-<div class="name">Soundarya</div>
+<img src="./team/medha.jpg" width="150" height="150" />
+<div class="name">Medhasri Yekula</div>
 <div class="designation">Head, Ambience</div>
 </div>
 <div class="pic">
-<img src="./team/vj.jpg" width="150" height="150" />
-<div class="name">Vyjayanthi</div>
+<img src="./team/sudharshan.jpg" width="150" height="150" />
+<div class="name">Sudharshan Suresh</div>
 <div class="designation">Head, Content</div>
 </div>
 <div class="pic">
-<img src="./team/praveen.jpg" width="150" height="150" />
-<div class="name">Praveen</div>
+<img src="./team/Ln.jpg" width="150" height="150" />
+<div class="name">Lakshminarayanan</div>
 <div class="designation">Head, Design</div>
+</div>
+<div class="pic">
+<img src="./team/rt.jpg" width="150" height="150" />
+<div class="name">Aarthi Krishnan</div>
+<div class="designation">Head, CSG</div>
 </div>
 
 </div>
 </div>
 
 <div class="fb-like" style="position:absolute;top:94.5%;right:4%;" data-href="https://www.facebook.com/sensorsNITTrichy/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
-
-<div id="form-container">
-<?php
-if(isset($_COOKIE['SID']))
-echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
-else
-echo '<button id="login">Login</button> / <a target="_blank" href="../register"> Register</a>';
-?>
-</div>
-	
-<div id="login-container" class="hide">
-<form id="login-form">
-<div class="label"><b>Email ID or Sensors ID</b></div>
-<input type="text" name="username" id="username" />
-<div class="label"><b>Password</b></div>
-<input type="password" name="pass" id="pass" />
-<button name="signin" id="signin">Sign In</button>
-<label id="error" style="color:red;display:none;padding:5px;">Invalid username or password</label>
-<label id="success" style="color:green;display:none;padding:5px;">Login successful</label>
-<br />
-<div class="label">New user? Click here to <a href="../register">register</a></div>
-<div id="return">Return to previous page</div>
-</form>
-</div>
 
 </body>
 

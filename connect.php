@@ -1,8 +1,11 @@
 <?php
 $servername = "localhost";
-$username = "sensom6o_admin";
-$password = "";
-$dbname = "sensom6o_sensors";
+//$username = "sensom6o_admin";
+$username = "root";
+//$password = "";
+$password = "groves";
+//$dbname = "sensom6o_sensors";
+$dbname = "sensors17";
 
 // Create connection
 $con = mysql_connect($servername, $username, $password);
