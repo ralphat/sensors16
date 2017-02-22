@@ -1,13 +1,3 @@
-<?php
-ini_set('display_errors','off');
-include '../connect.php';
-if(isset($_COOKIE["SID"])){
-	$id = mysql_real_escape_string($_COOKIE["SID"]);
-	$workshop_query = "select * from registration where ID=".$id;
-	$workshop_list = mysql_query($workshop_query);
-	$workshop = mysql_fetch_array($workshop_list);
-}
-?>
 <!DOCTYPE html>	
 <html>
 

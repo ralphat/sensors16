@@ -55,7 +55,7 @@
 <div class="desc-container">
 	<div id="moore-d" class="show">
 	<h2>CODEQUEST</h2>
-	<p>if (You’re a coder)<br />goto Sensors;<br />else<br />Printf("Well, there’s no be er place to start learning!");<br />Sensors:<br />Printf(“ Participate in Codequest\n Run your fingers through the keyboard\n Compile your brains out and watch the magic unfold onscreen”);</p><p><b>EVENT MANAGERS :</b><br />Ankit ( 82202 93471 ) <br /> Muralidharan ( 80983 88128 )</p></br>
+	<p>if (You’re a coder)<br />goto Sensors;<br />else<br />Printf("Well, there’s no better place to start learning!");<br />Sensors:<br />Printf(“ Participate in Codequest\n Run your fingers through the keyboard\n Compile your brains out and watch the magic unfold onscreen”);</p><p><b>EVENT MANAGERS :</b><br />Ankit ( 82202 93471 ) <br /> Muralidharan ( 80983 88128 )</p></br>
 	<div class="dont-show" id="moores_labyrinth_r">You've registered for Codequest.</div>
 	<?php
 	if(isset($_COOKIE['SID'])){
@@ -73,7 +73,7 @@
 	<div id="paper-d" class="dont-show">
 	<h2>EXPOSITION</h2
 	<p><b>Small minds discuss people, Average minds discuss events, Great minds discuss ideas<br />~ Eleanor Roosevelt</b></p>
-	<p>Sensors serves as an amazing pla orm to bring out your interests, talents and depth of knowledge in your preferred domains. We invite you to present your ideas to inquisi ve minds from the engineering world, in this technical extravaganza.</p><p><b>EVENT MANAGERS :</b><br />Apuroop ( 82202 85481 )<br />Vaneesha ( 99522 14684 )</p></p> </br>
+	<p>Sensors serves as an amazing platform to bring out your interests, talents and depth of knowledge in your preferred domains. We invite you to present your ideas to inquisitive minds from the engineering world, in this technical extravaganza.</p><p><b>EVENT MANAGERS :</b><br />Apuroop ( 82202 85481 )<br />Vaneesha ( 99522 14684 )</p></p> </br>
 	<div class="dont-show" id="paper_presentation_r">You've registered for Paper Exposition.</div>
 	<?php
 	if(isset($_COOKIE['SID'])){
