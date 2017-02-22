@@ -223,7 +223,7 @@ digits written by you.<br /> <br />For more details or queries, contact :<br /> 
 
 <!--
 <div id="form-container">
-<?php
+//<?php
 //if(isset($_COOKIE['SID']))
 //echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
 //else

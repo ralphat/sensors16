@@ -71,6 +71,30 @@
 
 <div class="fb-like" style="position:absolute;top:94.5%;right:4%;" data-href="https://www.facebook.com/sensorsNITTrichy/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 
+<div id="form-container">
+<?php
+if(isset($_COOKIE['SID']))
+echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
+else
+echo '<button id="login">Login</button> / <a target="_blank" href="../register"> Register</a>';
+?>
+</div>
+	
+<div id="login-container" class="hide">
+<form id="login-form">
+<div class="label"><b>Email ID or Sensors ID</b></div>
+<input type="text" name="username" id="username" />
+<div class="label"><b>Password</b></div>
+<input type="password" name="pass" id="pass" />
+<button name="signin" id="signin">Sign In</button>
+<label id="error" style="color:red;display:none;padding:5px;">Invalid username or password</label>
+<label id="success" style="color:green;display:none;padding:5px;">Login successful</label>
+<br />
+<div class="label">New user? Click here to <a href="../register">register</a></div>
+<div id="return">Return to previous page</div>
+</form>
+</div>
+
 </body>
 
 <script>

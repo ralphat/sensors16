@@ -86,7 +86,11 @@ text-decoration:underline;
 display:block;
 }
 
-
+@media only screen and (orientation:portrait){
+#background-container{
+width:200%;
+height:100%;
+}
 
 #fbLike{
 left:180%;

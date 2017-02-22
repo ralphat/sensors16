@@ -1,13 +1,3 @@
-<?php
-ini_set('display_errors','off');
-include '../connect.php';
-if(isset($_COOKIE["SID"])){
-	$id = mysql_real_escape_string($_COOKIE["SID"]);
-	$event_query = "select * from registration where ID=".$id;
-	$event_list = mysql_query($event_query);
-	$event = mysql_fetch_array($event_list);
-}
-?>
 <!DOCTYPE html>	
 <html>
 
@@ -21,7 +11,7 @@ if(isset($_COOKIE["SID"])){
 	<meta name="keywords"  content="sensors,symposium,NITT,ICE,instrumentation,control" />
 	<meta name="Resource-type" content="Document" />
 	
-        <link rel = "shortcut icon" href = "../tab_image.ico"/>
+    <link rel = "shortcut icon" href = "../tab_image.ico"/>
 	<link type="text/css" rel="stylesheet" href="../normalise.css" />
 	<link type="text/css" rel="stylesheet" href="../common.css" />
 	<link type="text/css" rel="stylesheet" href="Event-style.css" />
@@ -162,7 +152,7 @@ if(isset($_COOKIE["SID"])){
 <div class="fb-like" style="position:absolute;top:94.5%;right:4%;" data-href="https://www.facebook.com/sensorsNITTrichy/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 <!--
 <div id="form-container">
-<?php
+//<?php
 //if(isset($_COOKIE['SID']))
 //echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
 //else
