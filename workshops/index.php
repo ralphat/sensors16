@@ -50,17 +50,7 @@
 <p>The Harvard Business Review recently proclaimed the Data Scientist to be the snazziest job of the 21st Century. Data Science, in very technical terms, is an amalgamation of statistical methods, probability theory, programming and business. It finds extensive use in day-to-day transactions at banks, shops and E-commerce websites. In today's world, we are drowning in information, but we hardly have any knowledge! Through this workshop, we aim to teach you how to discover knowledge from unstructured, dirty and non-uniform data. Through the course of the workshop, you will explore data science and business analytics via standard tools like R, Python, Excel, Sqlite and so on. By the end of the day, we would have also completed designing a Sentiment analysis app using R.<br /> <br />For more details or queries, contact :<br />Pragyaditya ( 87542 18356 )</p><br />
 <div class="info">
 <div class="dont-show" id="gesture_control_r">You've registered for this workshop.</div>
-<?php
-	if(isset($_COOKIE['SID'])){
-	if($workshop['gesture_control']==1)
-	echo 'You\'ve registered for this workshop.';
-	else
-	echo '<button id="gesture_control" onclick="workshop_register(this);">Register for this workshop</button>';
-	}
-	else{
-	echo '<i>Registration will begin shortly.</i>';
-	}
-?>
+
 </div>
 <div class="line"></div>
 <h1> CARROM ARM USING GESTURE TRACKING <h1> <h3> Play Carrom using a Robot and Image Processing, the Engineer’s way </h3>
@@ -70,17 +60,7 @@
 <p>Ever thought of jumping into the world of robotics? Ever dreamt of playing carrom with your friend the engineer’s way? In this workshop you will build a robotic arm which imitates you, equipped to play carrom. Your arm movement will be tracked using a camera, and the robotic arm plays carrom for you based on your movement. You will learn to construct a 2 DoF arm and position it using servo motors. You will also be taught inverse kinematics, the basics of Arduino microcontroller and how to track your arm using image processing in Python.<br /> <br />For more details or queries, contact :<br />Mohammed Naveed ( 91596 47127 )</p><br />
 <div class="info">
 <div class="dont-show" id="data_science_r">You've registered for this workshop.</div>
-<?php
-	if(isset($_COOKIE['SID'])){
-	if($workshop['data_science']==1)
-	echo 'You\'ve registered for this workshop.';
-	else
-	echo '<button id="data_science" onclick="workshop_register(this);">Register for this workshop</button>';
-	}
-	else{
-	echo '<i>Registration will begin shortly.</i>';
-	}
-?>
+
 </div>
 <div class="line"></div>
 
@@ -89,17 +69,7 @@
 <p>The world is seeing the rise of robots and machine intelligence and this is your chance to look at just the tip of the iceberg! The workshop will teach you how to build a robot that obeys your orders and move in the required direction. The voice signals will be processed in a smart phone using an app, sent to the robot wirelessly and the directions will be inferred. You will learn the basics of mobile robots, Arduino microcontrollers, speech recognition, electronics and app development using MIT app inventor. This is your chance to give life to your machines!<br /> <br />For more details or queries, contact :<br />Bala Durgesh ( 98415 49244 )</p><br />
 <div class="info">
 <div class="dont-show" id="design_r">You've registered for this workshop.</div>
-<?php
-	if(isset($_COOKIE['SID'])){
-	if($workshop['design']==1)
-	echo 'You\'ve registered for this workshop.';
-	else
-	echo '<button id="design" onclick="workshop_register(this);">Register for this workshop</button>';
-	}
-	else{
-	echo '<i>Registration will begin shortly.</i>';
-	}
-?>
+
 </div>
 <div class="line"></div>
 
@@ -114,17 +84,7 @@
 <br /> <br />For more details or queries, contact :<br />Sameer ( 94446 41311 )</ul><br />
 <div class="info">
 <div class="dont-show" id="machine_learning_r">You've registered for this workshop.</div>
-<?php
-	if(isset($_COOKIE['SID'])){
-	if($workshop['machine_learning']==1)
-	echo 'You\'ve registered for this workshop.';
-	else
-	echo '<button id="machine_learning" onclick="workshop_register(this);">Register for this workshop</button>';
-	}
-	else{
-	echo '<i>Registration will begin shortly.</i>';
-	}
-?>
+
 </div>
 <div class="line"></div>
 
@@ -141,17 +101,7 @@ the natural colors present in the universe. Do attend this workshop to have all 
 world in your palette!<br /> <br />For more details or queries, contact :<br />Venkatesh ( 73584 05467 )</p><br />
 <div class="info">
 <div class="dont-show" id="brain_wave_r">You've registered for this workshop.</div>
-<?php
-	if(isset($_COOKIE['SID'])){
-	if($workshop['brain_wave']==1)
-	echo 'You\'ve registered for this workshop.';
-	else
-	echo '<button id="brain_wave" onclick="workshop_register(this);">Register for this workshop</button>';
-	}
-	else{
-	echo '<i>Registration will begin shortly.</i>';
-	}
-?>
+
 </div>
 <div class="line"></div>
 
@@ -169,17 +119,7 @@ also provide an introduction to single board computers used in wearables.
 Step into the next era with us!<br /> <br />For more details or queries, contact :<br />Subramanian ( 98407 40700 )</p><br />
 <div class="info">
 <div class="dont-show" id="music_production_r">You've registered for this workshop.</div>
-<?php
-	if(isset($_COOKIE['SID'])){
-	if($workshop['music_production']==1)
-	echo 'You\'ve registered for this workshop.';
-	else
-	echo '<button id="music_production" onclick="workshop_register(this);">Register for this workshop</button>';
-	}
-	else{
-	echo '<i>Registration will begin shortly.</i>';
-	}
-?>
+
 </div>
 <div class="line"></div>
 <h1 class="right">D1G1T R3C0GN1S3R</h1><h3>Using Artificial Neural Networks and Machine Learning</h3>
@@ -196,17 +136,7 @@ Using an ANN, you'll learn to implement the digit recognizer to make your comput
 digits written by you.<br /> <br />For more details or queries, contact :<br /> Hemprasad ( 90037 39889 )</p><br />
 <div class="info">
 <div class="dont-show" id="music_production_r">You've registered for this workshop.</div>
-<?php
-	if(isset($_COOKIE['SID'])){
-	if($workshop['music_production']==1)
-	echo 'You\'ve registered for this workshop.';
-	else
-	echo '<button id="music_production" onclick="workshop_register(this);">Register for this workshop</button>';
-	}
-	else{
-	echo '<i>Registration will begin shortly.</i>';
-	}
-?>
+
 </div>
 </div>
 </div>
