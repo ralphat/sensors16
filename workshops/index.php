@@ -6,7 +6,6 @@
 	<meta name="viewport" content="initial-scale=0.5" />
 
 	<title>Sensors'17</title>
-	<meta name="author" content="Sarwesh Krishnan" />
 	<meta name="description" content="Instrumentation and Contol Engineering department, NITT symposium website." />
 	<meta name="keywords"  content="sensors,symposium,NITT,ICE,instrumentation,control" />
 	<meta name="Resource-type" content="Document" />
@@ -39,6 +38,7 @@
 	<div id="page">WORKSHOPS</div>
 	<a href="../"><div id="logo"></div></a>
 	<div id="link-container">
+		<a href="../">Home</a>
 		<a href="../about">About</a>
 		<a href="../workshops">Workshops</a>
 		<a href="../events">Events</a>

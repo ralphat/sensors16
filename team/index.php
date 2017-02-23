@@ -35,6 +35,7 @@
 	<div id="page">TEAM</div>
 	<a href="../"><div id="logo"></div></a>
 	<div id="link-container">
+	<a href="../">Home</a>
 	<a href="../about">About</a>
 	<a href="../workshops">Workshops</a>
 	<a href="../events">Events</a>

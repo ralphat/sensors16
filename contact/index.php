@@ -35,6 +35,7 @@
 	<div id="page">CONTACT</div>
 	<a href="../"><div id="logo"></div></a>
 	<div id="link-container">
+	<a href="../">Home</a>
 	<a href="../about">About</a>
 	<a href="../workshops">Workshops</a>
 	<a href="../events">Events</a>
@@ -66,7 +67,7 @@
 		</div>
 </div>
 <div class="line"></div>
-<iframe id="map-container" frameborder="0" src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJ49dVDBT1qjsRzFm7wd82bsA&destination=place_id:ChIJ4RqOdUeNqjsRWrDqnjgWPgs&key=AIzaSyAnWo5tAVsYKpRV-gLrWXf25fywwY3PAGE" allowfullscreen>	</iframe>
+<iframe id="map-container" frameborder="0" src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJ49dVDBT1qjsRzFm7wd82bsA&destination=place_id:ChIJ4RqOdUeNqjsRWrDqnjgWPgs&key=AIzaSyAnWo5tAVsYKpRV-gLrWXf25fywwY3PAGE" allowfullscreen>	</iframe> <br />
 </div>
 
 <div class="fb-like" style="position:absolute;top:94.5%;right:4%;" data-href="https://www.facebook.com/sensorsNITTrichy/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
