@@ -270,10 +270,10 @@ opacity:0.95;
 
 #logo{
 position:absolute;
-width:59px;
+width:79px;
 height:74px;
 top:6px;
-left:-10px;
+left:10px;
 background-image:url('../website/sensors17_logo.jpg');
 background-size:100% 100%;
 }
