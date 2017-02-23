@@ -55,19 +55,9 @@
 <div class="designation">Overall Coordinator</div>
 </div>
 <div class="pic">
-<img src="./team/sajith.jpg" width="150" height="150" />
-<div class="name">Sajith AB</div>
-<div class="designation">Head, Organising Committee</div>
-</div>
-<div class="pic">
 <img src="./team/vishwa.jpg" width="150" height="150" />
 <div class="name">Vishwarupa</div>
 <div class="designation">Treasurer</div>
-</div>
-<div class="pic">
-<img src="./team/vamshi.jpg" width="150" height="150" />
-<div class="name">Vamshi</div>
-<div class="designation">Head, Marketing</div>
 </div>
 <div class="pic">
 <img src="./team/pradeep.jpg" width="150" height="150" />
@@ -75,9 +65,19 @@
 <div class="designation">Technical Secretary</div>
 </div>
 <div class="pic">
-<img src="./team/ria.jpg" width="150" height="150" />
-<div class="name">Ria</div>
-<div class="designation">Editor, ICEA Newsletter</div>
+<img src="./team/vamshi.jpg" width="150" height="150" />
+<div class="name">Vamshi</div>
+<div class="designation">Head, Marketing</div>
+</div>
+<div class="pic">
+<img src="./team/kumar.jpg" width="150" height="150" />
+<div class="name">V Moovithakkumar</div>
+<div class="designation">Head, Publicity</div>
+</div>
+<div class="pic">
+<img src="./team/sajith.jpg" width="150" height="150" />
+<div class="name">Sajith AB</div>
+<div class="designation">Head, Organising Committee</div>
 </div>
 <div class="pic">
 <img src="./team/narendar.jpg" width="150" height="150" />
@@ -110,9 +110,9 @@
 <div class="designation">Head, Hospitality</div>
 </div>
 <div class="pic">
-<img src="./team/medha.jpg" width="150" height="150" />
-<div class="name">Medhasri Yekula</div>
-<div class="designation">Head, Ambience</div>
+<img src="./team/ria.jpg" width="150" height="150" />
+<div class="name">Ria</div>
+<div class="designation">Editor, ICEA Newsletter</div>
 </div>
 <div class="pic">
 <img src="./team/sudharshan.jpg" width="150" height="150" />
@@ -123,6 +123,11 @@
 <img src="./team/Ln.jpg" width="150" height="150" />
 <div class="name">Lakshminarayanan</div>
 <div class="designation">Head, Design</div>
+</div>
+<div class="pic">
+<img src="./team/medha.jpg" width="150" height="150" />
+<div class="name">Medhasri Yekula</div>
+<div class="designation">Head, Ambience</div>
 </div>
 <div class="pic">
 <img src="./team/rt.jpg" width="150" height="150" />
