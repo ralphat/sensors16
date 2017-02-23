@@ -6,7 +6,6 @@
 	<meta name="viewport" content="initial-scale=0.5" />
 
 	<title>Sensors'17</title>
-	<meta name="author" content="Sarwesh Krishnan" />
 	<meta name="description" content="Instrumentation and Contol Engineering department, NITT symposium website." />
 	<meta name="keywords"  content="sensors,symposium,NITT,ICE,instrumentation,control" />
 	<meta name="Resource-type" content="Document" />
@@ -45,8 +44,9 @@
 </div>
 
 <div id="about-content">
-<p>Sensors is the annual technical symposium of the Instrumentation and Control Department of NIT Trichy. Started in 1997, it has for 19 years been delivering a variety of events to the niche world of instrumentation and control. For the past few years, Sensors has featured guest lecturers from the Centre of Development of Advanced Computing, ISRO, BHEL and Intel India. In addition to this we also have hosted a wide variety of workshops for students. A few of them are Flight Instrumentation, Biomedical Instrumentation, and more.</p>
-<p>This year Sensors aims to make itself bigger by presenting to students workshops of never seen before calibre. There are both technical and non-technical workshops in this edition of Sensors. Apart from the workshops there are events like Paper Exposition, Codequest and Sensors General Quiz, to name a few, for students to show-off their skills in. If you want the cache of your knowledge to expand and if you want to increase your skillset, Sensors ’17 is the right platform for all you aspiring individuals! Sense, control, and let the world be yours!</p>
+<p>Sensors, the annual technical symposium conducted by the department of Instrumentation and Control at NIT Trichy marks its 20th anniversary this year. It has been catering a miscellany of programs to the niche world of automation. This year, Sensors aims at creating benchmark presentations <i>thus</i> marking its double decade achievement. Among the many workshop, a few  <i>at</i> this  juncture include  AEROcontrol, Carrom arm using gesture tracking, Speech Controlled Robot and Sign Language Converter. The concepts covered range from Instrumentation to Image processing, Manipulators to Machine learning. In order to create a competitive environment, the events scheduled include codequests, exposition, TARS- line follower designs and general themed quizzes.</p>
+<p><i>Keen</i> in expanding the cache of your knowledge and skill set? Well, then there's no place more accurate to sense.</p>
+<p><b>Actuate us by your presence this SENSORS'17, awaiting to control all with the best compensators</b></p>
 </div>
 
 </div>
