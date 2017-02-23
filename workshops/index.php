@@ -21,31 +21,35 @@
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
 </head>
+
 <body>
 <div id="fb-root"></div>
+
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1063823873635962";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+</script>
 
 <div id="bg">
 <div id="header">
 	<div id="page">WORKSHOPS</div>
 	<a href="../"><div id="logo"></div></a>
 	<div id="link-container">
-	<a href="../about">About</a>
-	<a href="../workshops">Workshops</a>
-	<a href="../events">Events</a>
-	<a href="../team">Team</a>
-	<a href="../contact">Contact</a>
+		<a href="../about">About</a>
+		<a href="../workshops">Workshops</a>
+		<a href="../events">Events</a>
+		<a href="../team">Team</a>
+		<a href="../contact">Contact</a>
 	</div>
 </div>
 
 <div id="workshop-container">
-<h1>STATISTICALLY SPEAKING <h1> <h3> Step foot into the next big thing in the market, DATA SCIENCES </h3>
+<h1>STATISTICALLY SPEAKING</h1>
+<h3> Step foot into the next big thing in the market, DATA SCIENCES </h3>
 <img src="./workshop/1_stat.jpg" class="image" />
 <p>The Harvard Business Review recently proclaimed the Data Scientist to be the snazziest job of the 21st Century. Data Science, in very technical terms, is an amalgamation of statistical methods, probability theory, programming and business. It finds extensive use in day-to-day transactions at banks, shops and E-commerce websites. In today's world, we are drowning in information, but we hardly have any knowledge! Through this workshop, we aim to teach you how to discover knowledge from unstructured, dirty and non-uniform data. Through the course of the workshop, you will explore data science and business analytics via standard tools like R, Python, Excel, Sqlite and so on. By the end of the day, we would have also completed designing a Sentiment analysis app using R.<br /> <br />For more details or queries, contact :<br />Pragyaditya ( 87542 18356 )</p><br />
 <div class="info">
@@ -53,9 +57,11 @@
 
 </div>
 <div class="line"></div>
-<h1> CARROM ARM USING GESTURE TRACKING <h1> <h3> Play Carrom using a Robot and Image Processing, the Engineer’s way </h3>
+<h1> CARROM ARM USING GESTURE TRACKING </h1>
+<h3> Play Carrom using a Robot and Image Processing, the Engineer’s way </h3>
 <div style="display: inline-block;">
-<img src="./workshop/2_carrom.jpg" class="image" style="float: left; margin: 20px 0; max-width: 40%;" /><img src="./workshop/2_carrom2.jpg" class="image" style="float: right; margin: 20px 0; width: 60%" />
+<img src="./workshop/2_carrom.jpg" class="image" style="float: left; margin: 20px 0; max-width: 40%;" />
+<img src="./workshop/2_carrom2.jpg" class="image" style="float: right; margin: 20px 0; width: 60%" />
 </div>
 <p>Ever thought of jumping into the world of robotics? Ever dreamt of playing carrom with your friend the engineer’s way? In this workshop you will build a robotic arm which imitates you, equipped to play carrom. Your arm movement will be tracked using a camera, and the robotic arm plays carrom for you based on your movement. You will learn to construct a 2 DoF arm and position it using servo motors. You will also be taught inverse kinematics, the basics of Arduino microcontroller and how to track your arm using image processing in Python.<br /> <br />For more details or queries, contact :<br />Mohammed Naveed ( 91596 47127 )</p><br />
 <div class="info">

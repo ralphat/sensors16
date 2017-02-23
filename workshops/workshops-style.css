@@ -11,10 +11,19 @@ font-size:17px;
 font-family:"Source Sans Pro";
 background-color:rgba(2,73,134,0.3);
 }
+
 #workshop-container h1{
 font-size:30px;
 color:#fff;
 text-align:left;
+}
+
+#workshop-container h3{
+color:#ffdab9;
+}
+
+#workshop-container p,ul,li{
+color:#fff;
 }
 
 .line{

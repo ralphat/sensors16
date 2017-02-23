@@ -60,7 +60,7 @@
 	</div>
 	
 	<div id="paper-d" class="dont-show">
-	<h2>EXPOSITION</h2
+	<h2>PAPER EXPOSITION</h2>
 	<p><b>Small minds discuss people, Average minds discuss events, Great minds discuss ideas<br />~ Eleanor Roosevelt</b></p>
 	<p>Sensors serves as an amazing platform to bring out your interests, talents and depth of knowledge in your preferred domains. We invite you to present your ideas to inquisitive minds from the engineering world, in this technical extravaganza.</p><p><b>EVENT MANAGERS :</b><br />Apuroop ( 82202 85481 )<br />Vaneesha ( 99522 14684 )</p></p> </br>
 	<div class="dont-show" id="paper_presentation_r">You've registered for Paper Exposition.</div>
