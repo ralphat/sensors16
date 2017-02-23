@@ -46,7 +46,7 @@
 <div id="about-content">
 <p>Sensors, the annual technical symposium conducted by the department of Instrumentation and Control at NIT Trichy marks its 20th anniversary this year. It has been catering a miscellany of programs to the niche world of automation. This year, Sensors aims at creating benchmark presentations <i>thus</i> marking its double decade achievement. Among the many workshop, a few  <i>at</i> this  juncture include  AEROcontrol, Carrom arm using gesture tracking, Speech Controlled Robot and Sign Language Converter. The concepts covered range from Instrumentation to Image processing, Manipulators to Machine learning. In order to create a competitive environment, the events scheduled include codequests, exposition, TARS- line follower designs and general themed quizzes.</p>
 <p><i>Keen</i> in expanding the cache of your knowledge and skill set? Well, then there's no place more accurate to sense.</p>
-<p><b>Actuate us by your presence this SENSORS'17, awaiting to control all with the best compensators</b></p>
+<p><center><b>Actuate us by your presence this SENSORS'17, awaiting to control all with the best compensators.</b></center></p>
 </div>
 
 </div>
