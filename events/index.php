@@ -55,37 +55,16 @@
 <div class="desc-container">
 	<div id="moore-d" class="show">
 	<h2>CODEQUEST</h2>
-	<p>if (You’re a coder)<br />goto Sensors;<br />else<br />Printf("Well, there’s no be er place to start learning!");<br />Sensors:<br />Printf(“ Participate in Codequest\n Run your fingers through the keyboard\n Compile your brains out and watch the magic unfold onscreen”);</p><p><b>EVENT MANAGERS :</b><br />Ankit ( 82202 93471 ) <br /> Muralidharan ( 80983 88128 )</p></br>
+	<p>if (You’re a coder)<br />goto Sensors;<br />else<br />Printf("Well, there’s no better place to start learning!");<br />Sensors:<br />Printf(“ Participate in Codequest\n Run your fingers through the keyboard\n Compile your brains out and watch the magic unfold onscreen”);</p><p><b>EVENT MANAGERS :</b><br />Ankit ( 82202 93471 ) <br /> Muralidharan ( 80983 88128 )</p></br>
 	<div class="dont-show" id="moores_labyrinth_r">You've registered for Codequest.</div>
-	<?php
-	if(isset($_COOKIE['SID'])){
-	if($event['moores_labyrinth']==1)
-	echo 'You\'ve registered for Codequest';
-	else
-	echo '<button id="moores_labyrinth" onclick="event_register(this);">Register for Codequest</button>';
-	}
-	else{
-	echo '<i>Registrations will begin shortly.</i>';
-	}
-	?>
 	</div>
 	
 	<div id="paper-d" class="dont-show">
 	<h2>EXPOSITION</h2
 	<p><b>Small minds discuss people, Average minds discuss events, Great minds discuss ideas<br />~ Eleanor Roosevelt</b></p>
-	<p>Sensors serves as an amazing pla orm to bring out your interests, talents and depth of knowledge in your preferred domains. We invite you to present your ideas to inquisi ve minds from the engineering world, in this technical extravaganza.</p><p><b>EVENT MANAGERS :</b><br />Apuroop ( 82202 85481 )<br />Vaneesha ( 99522 14684 )</p></p> </br>
+	<p>Sensors serves as an amazing platform to bring out your interests, talents and depth of knowledge in your preferred domains. We invite you to present your ideas to inquisitive minds from the engineering world, in this technical extravaganza.</p><p><b>EVENT MANAGERS :</b><br />Apuroop ( 82202 85481 )<br />Vaneesha ( 99522 14684 )</p></p> </br>
 	<div class="dont-show" id="paper_presentation_r">You've registered for Paper Exposition.</div>
-	<?php
-	if(isset($_COOKIE['SID'])){
-	if($event['paper_presentation']==1)
-	echo 'You\'ve registered for Paper Exposition.';
-	else
-	echo '<button id="paper_presentation" onclick="event_register(this);">Register for Paper Exposition</button>';
-	}
-	else{
-	echo '<i>Registrations will begin shortly.</i>';
-	}
-	?>
+	
 	</div>
 	
 	<div id="encipher-d" class="dont-show">
@@ -97,51 +76,20 @@
 	- It is a general quiz, not specific to instrumentation and control.<br />
 	- 6-8 teams qualify for finals.</p><p><b>EVENT MANAGER :</b><br />Surya ( 96889 71832 )</p></br>
 	<div class="dont-show" id="encipher_r">You've registered for The Sensors General Quiz.</div>
-	<?php
-	if(isset($_COOKIE['SID'])){
-	if($event['encipher']==1)
-	echo 'You\'ve registered for The Sensors General Quiz.';
-	else
-	echo '<button id="encipher" onclick="event_register(this);">Register for The Sensors General Quiz</button>';
-	}
-	else{
-	echo '<i>Registrations will begin shortly.</i>';
-	}
-	?>
 	</div>
 	
 	<div id="quiz-d" class="dont-show">
 	<h2>FIND THE TARS – LINE FOLLOWER EVENT</h2>
 	<p>A new face has been added to the solar system's family portrait: Scientists have discovered a new dwarf planet looping around the sun in the region beyond Pluto. TARS is a car-sized robotic rover exploring on this planet to collect information. It has to reach the base station within the stipulated time but it hasn’t returned yet. Your mission is to find whether the planet is habitable or not by reaching out to TARS. Build an autonomous line follower robot which would negotiate through obstacles, inversions and determine the correct path to find TARS.</p><p><b>EVENT MANAGERS :</b><br />Lokesh ( 89037 81031 )<br />Sathwik ( 82202 99470 )</p></br>
 	<div class="dont-show" id="quiz_r">You've registered for Find the TARS.</div>
-	<?php
-	if(isset($_COOKIE['SID'])){
-	if($event['quiz']==1)
-	echo 'You\'ve registered for Find the TARS.';
-	else
-	echo '<button id="quiz" onclick="event_register(this);">Register for Find the TARS</button>';
-	}
-	else{
-	echo '<i>Registrations will begin shortly.</i>';
-	}
-	?>
+	
 	</div>
 	
 	<div id="sensor-d" class="dont-show">
 	<h2>TRIAL BY TRONIX</h2>
 	<p>For those who have been longing for an opportunity to flaunt their circuit design skills – the ultimate challenge to test your electronics knowledge is here. The event consists of two rounds: with a preliminary written round and a final hardware round. The written round will comprise of questions on basic analog, digital electronics and circuit design tasks. Around 8-10 teams will be shortlisted based on their performance to participate in the final round which involves the practical implementation of circuits for problem statements given on the spot.</p><p><b>EVENT MANAGERS :</b><br /> Krishna ( 87542 18578 )<br />Tejaswi ( 9487949352 )</p></br>
 	<div class="dont-show" id="sensor_design_r">You've registered for Sensor Design.</div>
-	<?php
-	if(isset($_COOKIE['SID'])){
-	if($event['sensor_design']==1)
-	echo 'You\'ve registered for Sensor Design.';
-	else
-	echo '<button id="sensor_design" onclick="event_register(this);">Register for Sensor Design</button>';
-	}
-	else{
-	echo '<i>Registrations will begin shortly.</i>';
-	}
-	?>
+	
 	</div>
 
 	</div>
