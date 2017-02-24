@@ -84,7 +84,7 @@
 	
 	<div id="quiz-d" class="dont-show">
 	<h2>FIND THE TARS – LINE FOLLOWER EVENT</h2>
-	<p>A new face has been added to the solar system's family portrait : Scientists have discovered a new dwarf planet looping around the sun in the region beyond Pluto. TARS is a car-sized robotic rover exploring on this planet to collect information. It has to reach the base station within the stipulated time but it hasn’t returned yet. Your mission is to find whether the planet is habitable or not by reaching out to TARS.</p>
+	<p>A new face has been added to the solar system's family portrait : Scientists have discovered a new dwarf planet looping around the sun in the region beyond Pluto. TARS is a car-sized robotic rover exploring on this planet to collect information. It has to reach the base station within the stipulated time but it hasn’t returned yet.</p>
 	<p>Build an autonomous line follower robot which would negotiate through obstacles, inversions and determine the correct path to find TARS.</p>
 	<p><a href="./TARS_FAQ.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description and FAQs.</p>
 	<p><b>EVENT MANAGERS :</b><br />Lokesh ( 89037 81031 )<br />Sathwik ( 82202 99470 )</p></br>
