@@ -50,7 +50,7 @@
 	<button id="encipher-" class="tab" onclick="change(this);">The Sensors General Quiz</button>
 	<button id="quiz-" class="tab" onclick="change(this);">Find the TARS – Line Follower Event</button>
 	<button id="sensor-" class="tab" onclick="change(this);">Trial by Tronix</button>
-	<button id="gif-" class="tab" onclick="change(this);">Gif Challenge</button>
+	<button id="gif-" class="tab" onclick="change(this);">GIF Challenge</button>
 </div>
 
 <div class="desc-container">
@@ -104,7 +104,7 @@
 	</div>
 	
 	<div id="gif-d" class="dont-show">
-	<h2>GIF CHALENGE</h2>
+	<h2>GIF CHALLENGE</h2>
 	<p>We know that you love to see GIFs on Facebook, Twitter and every other social platform. GIFs are one of the most trending modes of visuals now. But have you ever tried making one? Here is your opportunity to create a GIF. Not just create one, but also win prizes worth Rs.4,000!</p>
  	<p>Sharpen your Brains and let your Creativity, Comic sense and Craziness flow. Create your own GIFs and post them on your FB Timeline or on your friend’s timeline ( :P ). Simply use the hashtag “#GIFSensors17” in your description to submit your GIF.</p>
 	<p>Play it. Loop it.</p>
