@@ -50,15 +50,16 @@
 	<button id="encipher-" class="tab" onclick="change(this);">The Sensors General Quiz</button>
 	<button id="quiz-" class="tab" onclick="change(this);">Find the TARS – Line Follower Event</button>
 	<button id="sensor-" class="tab" onclick="change(this);">Trial by Tronix</button>
+	<button id="gif-" class="tab" onclick="change(this);">Gif Challenge</button>
 </div>
 
 <div class="desc-container">
 	<div id="moore-d" class="show">
-	<h2>CODEQUEST</h2>
-	<p>if (You’re a coder)<br />goto Sensors;<br />else<br />Printf("Well, there’s no better place to start learning!");<br />Sensors:<br />Printf(“ Participate in Codequest\n Run your fingers through the keyboard\n Compile your brains out and watch the magic unfold onscreen”);</p>
-	<p><a href="./codequest.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description and FAQs.</p>
-	<p><b>EVENT MANAGERS :</b><br />Ankit ( 82202 93471 ) <br /> Muralidharan ( 80983 88128 )</p></br>
-	<div class="dont-show" id="moores_labyrinth_r">You've registered for Codequest.</div>
+		<h2>CODEQUEST</h2>
+		<p>if (You’re a coder)<br />goto Sensors;<br />else<br />Printf("Well, there’s no better place to start learning!");<br />Sensors:<br />Printf(“ Participate in Codequest\n Run your fingers through the keyboard\n Compile your brains out and watch the magic unfold onscreen”);</p>
+		<p><a href="./codequest.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description and FAQs.</p>
+		<p><b>EVENT MANAGERS :</b><br />Ankit ( 82202 93471 ) <br /> Muralidharan ( 80983 88128 )</p></br>
+		<div class="dont-show" id="moores_labyrinth_r">You've registered for Codequest.</div>
 	</div>
 	
 	<div id="paper-d" class="dont-show">
@@ -100,10 +101,21 @@
 	<p><a href="./trailbytronix_FAQ.pdf" style="color: #add8e6">Click here</a>&nbsp; for FAQs.</p>
 	<p><b>EVENT MANAGERS :</b><br /> Krishna ( 87542 18578 )<br />Tejaswi ( 9487949352 )</p></br>
 	<div class="dont-show" id="sensor_design_r">You've registered for Sensor Design.</div>
+	</div>
 	
+	<div id="gif-d" class="dont-show">
+	<h2>GIF CHALENGE</h2>
+	<p>We know that you love to see GIFs on Facebook, Twitter and every other social platform. GIFs are one of the most trending modes of visuals now. But have you ever tried making one? Here is your opportunity to create a GIF. Not just create one, but also win prizes worth Rs.4,000!</p>
+ 	<p>Sharpen your Brains and let your Creativity, Comic sense and Craziness flow. Create your own GIFs and post them on your FB Timeline or on your friend’s timeline ( :P ). Simply use the hashtag “#GIFSensors17” in your description to submit your GIF.</p>
+	<p>Play it. Loop it.</p>
+	<p><b>P.S.</b> : The GIFs created cannot directly be uploaded onto Facebook. Please find the section “Directions to post GIF on Facebook” to know the procedure.</p>
+	<p><b>Deadline for submissions</b> :  March 11th , 2017 before 11:59pm.</p>
+	<p><b>Prizes Worth</b> : Rs.4,000. </p>
+    <p>Contact : Apuroop ( 82202 85481 )</p>
+	<p><a href="./gif.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description of the event.</p>
+	<div class="dont-show" id="gif_r">You've registered for Sensor Design.</div>
 	</div>
 
-	</div>
 </div>
 <!--
 <div id="marquee-container"><marquee onmouseover="this.stop();" onmouseout="this.start();">Rule book updated.&nbsp;<a target="_blank" style="text-decoration:underline;color:#fff;margin-right:100%;" href="./rulebook.pdf">Click here to download rulebook</a>The deadline for paper presentaion is 6pm, 9th of March, 2016. Kindly submit it to paperpresentaion@sensors.org.in</marquee></div>
@@ -182,6 +194,7 @@ $("#paper-").removeClass("active");
 $("#encipher-").removeClass("active");
 $("#quiz-").removeClass("active");
 $("#sensor-").removeClass("active");
+$("#gif-").removeClass("active");
 
 $("#"+id).addClass("active");
 
@@ -190,12 +203,14 @@ $("#paper-d").removeClass("show");
 $("#encipher-d").removeClass("show");
 $("#quiz-d").removeClass("show");
 $("#sensor-d").removeClass("show");
+$("#gif-d").removeClass("show");
 
 $("#moore-d").addClass("dont-show");
 $("#paper-d").addClass("dont-show");
 $("#encipher-d").addClass("dont-show");
 $("#quiz-d").addClass("dont-show");
 $("#sensor-d").addClass("dont-show");
+$("#gif-d").addClass("dont-show");
 
 $("#"+id+"d").removeClass("dont-show");
 $("#"+id+"d").addClass("show");
