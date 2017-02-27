@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Sensors'17</title>
+		<link rel = "shortcut icon" href = "../tab_image.ico"/>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="Validation.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+	</head>
+
+	<body>
+		<div id="header">
+			<div id="page">REGISTRATION</div>
+				<a href="../"><div id="logo"></div></a>
+				<div id="link-container">
+				<a href="../about">About</a>
+				<a href="../workshops">Workshops</a>
+				<a href="../events">Events</a>
+				<a href="../team">Team</a>
+				<a href="../contact">Contact</a>
+			</div>
+		</div>
+
+	<div class="form-container">
+		<div class="form-container-padding">
+			<form id="user_form" action="register.php" method="post">
+				<label>Hey there! What's your name?<em> *</em></label>
+				<input id="name" name="name" type="text" value="" onblur="validateName();" />
+				
+				<label>When were you born? ( dd/mm/yyyy )<em> *</em></label>
+				<input id="dob" name="dob" type="text" value="" onblur="validateDOB();"/>
+
+				<label>A reachable e-mail address.<em> *</em></label>
+				<input type="text" name="email_id" id="email_id" value="" onblur="validateEmail();"/>
+
+				<label>Time to make up a good password!<em> *</em></label>
+				<input type="password" id="password" name="password" value="" onblur="validatePassword();"/>
+
+				<label>Re-type that password right there ^<em> *</em></label>
+				<input type="password" id="repassword" name="repassword" value="" onblur="validatePassword();"/>
+
+				<label>Next up, your mobile number.<em> *</em></label>
+				<input type="text" name="phone_no" id="phone_no" value="" onblur="validatePhone();"/>
+				
+				<label>Which college are you from?<em> *</em></label>
+				<input type="text" name="college" id="college" value="" onblur="validateCollege();"/>
+
+				<label>So, what's your department?<em> *</em></label>
+				<select name="department" id="department">
+					<option value="archi">Architecture</option>
+					<option value="chem">Chemical</option>
+					<option value="civ">Civil</option>
+					<option value="cse">Computer Science</option>
+					<option value="eee">Electiral and Electronics</option>
+					<option value="ece">Electronics and Communication</option>
+					<option value="ei">Electronics and Instrumentation</option>
+					<option value="ice">Instrumentation and Control</option>
+					<option value="meta">Metallurgy</option>
+					<option value="prod">Production</option>
+					<option value="other">Other</option>
+				</select>
+				<label>What year are you currently in?<em> *</em></label>
+				<select name="year" id="year">
+					<option value="1">1st Year</option>
+					<option value="2">2nd Year</option>
+					<option value="3">3rd Year</option>
+					<option value="4">4th Year</option>
+					<option value="5">5th year</option>
+				</select>
+				<label>Gender</label><br /><br />	
+				<input type="radio" name="gender" value="Male" checked><div class="radio-text">Male</div></input>
+				<input type="radio" name="gender" value="Female"><div class="radio-text">Female</div></input>
+				<br /><br /><br />
+				<input type="submit" id="submit" value="Sign Up!" disabled="true"/>
+			</form>
+		</div>
+	</div>
+	<div class="misc-container">
+		<div class="misc-container-padding">
+			<div class="separate-them">
+			<div id="nameerror" class="tooltip">
+				Kindly provide your name in Firstname Lastname format. This is a required field.
+			</div>
+			</div>
+			<div class="separate-them">
+			<div id="dateofbirtherror" class="tooltip">
+				Kindly enter a valid date of birth. This is a required field.
+			</div>
+			</div>
+			<div class="separate-them">
+			<div id="emailerror" class="tooltip">
+				Kindly enter a valid email ID. This is a required field.
+			</div>
+			</div>
+			<div class="separate-them">
+			<div id="passworderror" class="tooltip">
+				Your password must be atleast 5 characters long, but less than 15 characters in length.
+				Allowed characters are: a-z, A-Z, 0-9 and &nbsp;_
+			</div>
+			</div>
+			<div class="separate-them">
+			<div id="passwordmatcherror" class="tooltip">
+				Passwords don't match.
+			</div>
+			</div>
+			<div class="separate-them">
+			<div id="phonenumbererror" class="tooltip">
+				Kindly provide a valid mobile number(10 digits). This is a required field.
+			</div>
+			</div>
+			<div class="separate-them">
+			<div id="collegeerror" class="tooltip">
+				Kindly provide your college name. This is a required field.
+			</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+	</body>
+</html>
