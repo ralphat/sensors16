@@ -1,27 +1,25 @@
 <?php
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
 ini_set('display_errors','off');
 include 'connect.php';
 
-$value = 'something from somewhere';
-
-
-$username=mysql_real_escape_string($_POST['username']);
-$password=mysql_real_escape_string(md5($_POST['pass']));
+$username = $db->escape_string($_POST['username']);
+$password = $db->escape_string(md5($_POST['pass']));
 
 if(empty($username)||empty($password))
 echo 0;
 else{
-$sql1 = "select id from main where email='".$username."' and password='".$password."'";
-$res1=mysql_query($sql1);
-$row1=mysql_fetch_array($res1);
+$sql = "SELECT id FROM `main` WHERE email = '".$username."' AND password='".$password."' AND registered = '1'";
+$result = $db->query($sql);
+$row = $result->fetch_assoc();
 
-//echo $row1;
-
-if($row1[0]>0){
-setcookie("SID", $row1["id"]);
+if(mysqli_num_rows($result)){
+setcookie("SID", $row['id']);
 echo 1;
 }
 else
 echo 0;
 }
 ?>
+

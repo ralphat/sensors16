@@ -14,8 +14,8 @@
 	<meta name="Resource-type" content="Document" />
 	
     <link rel = "shortcut icon" href = "./tab_image.ico"/>
-	<!--<link type="text/css" rel="stylesheet" href="normalise.css" />
-	<link type="text/css" rel="stylesheet" href="common.css" />-->
+	<link type="text/css" rel="stylesheet" href="normalise.css" />
+	<link type="text/css" rel="stylesheet" href="common.css" />
 	<link type="text/css" rel="stylesheet" href="style_edited.css" />
         
 
@@ -53,6 +53,15 @@
 <div id="sca">
 	<h1>Sense&nbsp;.&nbsp;Control&nbsp;.&nbsp;Actuate&nbsp;.</h1>
 </div>
+
+<div id="form-container">
+<?php
+//if(isset($_COOKIE['SID']))
+//echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
+//else
+//echo '<button id="login">Login</button> / <a target="_blank" href="./register">Register</a>';
+?>
+</div>
 	
 </div>
 <!--
@@ -73,7 +82,7 @@ Tip: Try to remove the background-attachment property to remove the scrolling ef
 </div>
 -->
 
-<!--
+
 <div id="login-container" class="hide">
 <form id="login-form">
 <div class="label"><b>Email ID or Sensors ID</b></div>
@@ -88,7 +97,7 @@ Tip: Try to remove the background-attachment property to remove the scrolling ef
 <div id="return">Return to previous page</div>
 </form>
 </div>
--->
+
 <!--
 <div id="uniq-container">
 <div id="uniq-link">

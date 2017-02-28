@@ -1,4 +1,5 @@
 <?php
+header("Location: ../index.php");
 ini_set('display_errors','off');
 //error_reporting(E_ALL);
 //ini_set('display_errors', 1);
@@ -14,8 +15,8 @@ if($username){
 	if(mysqli_num_rows($result)){
 		$row = $result->fetch_assoc();
 		$id = $row['id'];
-		echo $id;
-		$update_query = "UPDATE `main` SET registered = 1 where `email`='".$username."'";
+		echo "Verification successful!\nYour SID is " . $id;
+		$update_query = "UPDATE `main` SET registered = 1 where MD5(email)='".$username."'";
 		if(!$result = $db->query($update_query)){
 	    	die('There was an error running the query [' . $db->error . ']');
 		}
@@ -25,10 +26,10 @@ if($username){
 	    	die('There was an error running the query [' . $db->error . ']');
 		}
 	} else {
-		echo "Empty returned";
+		echo "Your registeration was unsuccessful.\n Kindly register again";
 	}
 } else {
-	echo "Empty string";
+	echo "Your registeration was unsuccessful.\n Kindly register again";
 }
 $db->close();
 ?>

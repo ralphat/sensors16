@@ -1,3 +1,13 @@
+<?php
+ini_set('display_errors','On');
+include '../connect.php';
+if(isset($_COOKIE["SID"])){
+	$id = $db->escape_string($_COOKIE["SID"]);
+	$event_query = "SELECT * FROM `registration` WHERE id = ".$id;
+	$event_list = $db->query($event_query);
+	$workshop = $event_list->fetch_assoc();
+}
+?>
 <!DOCTYPE html>	
 <html>
 
@@ -48,13 +58,24 @@
 </div>
 
 <div id="workshop-container">
+
 <h1>STATISTICALLY SPEAKING</h1>
 <h3> Step foot into the next big thing in the market, DATA SCIENCES </h3>
 <img src="./workshop/1_stat.jpg" class="image" />
 <p>The Harvard Business Review recently proclaimed the Data Scientist to be the snazziest job of the 21st Century. Data Science, in very technical terms, is an amalgamation of statistical methods, probability theory, programming and business. It finds extensive use in day-to-day transactions at banks, shops and E-commerce websites. In today's world, we are drowning in information, but we hardly have any knowledge! Through this workshop, we aim to teach you how to discover knowledge from unstructured, dirty and non-uniform data. Through the course of the workshop, you will explore data science and business analytics via standard tools like R, Python, Excel, Sqlite and so on. By the end of the day, we would have also completed designing a Sentiment analysis app using R.<br /> <br />For more details or queries, contact :<br />Pragyaditya ( 87542 18356 )</p><br />
 <div class="info">
-<div class="dont-show" id="gesture_control_r">You've registered for this workshop.</div>
-
+<div class="dont-show" id="stat_r">You've registered for this workshop.</div>
+<?php
+	if(isset($_COOKIE['SID'])){
+	if($workshop['stat']==1)
+	echo 'You\'ve registered for this workshop.';
+	else
+	echo '<button id="stat" onclick="workshop_register(this);">Register for this workshop</button>';
+	}
+	else{
+	echo '<i>Kindly login to register.</i>';
+	}
+?>
 </div>
 <div class="line"></div>
 <h1> CARROM ARM USING GESTURE TRACKING </h1>
@@ -65,8 +86,18 @@
 </div>
 <p>Ever thought of jumping into the world of robotics? Ever dreamt of playing carrom with your friend the engineer’s way? In this workshop you will build a robotic arm which imitates you, equipped to play carrom. Your arm movement will be tracked using a camera, and the robotic arm plays carrom for you based on your movement. You will learn to construct a 2 DoF arm and position it using servo motors. You will also be taught inverse kinematics, the basics of Arduino microcontroller and how to track your arm using image processing in Python.<br /> <br />For more details or queries, contact :<br />Mohammed Naveed ( 91596 47127 )</p><br />
 <div class="info">
-<div class="dont-show" id="data_science_r">You've registered for this workshop.</div>
-
+<div class="dont-show" id="carrom_r">You've registered for this workshop.</div>
+<?php
+	if(isset($_COOKIE['SID'])){
+	if($workshop['carrom']==1)
+	echo 'You\'ve registered for this workshop.';
+	else
+	echo '<button id="carrom" onclick="workshop_register(this);">Register for this workshop</button>';
+	}
+	else{
+	echo '<i>Kindly login to register.</i>';
+	}
+?>
 </div>
 <div class="line"></div>
 
@@ -74,8 +105,18 @@
 <img src="./workshop/3_speechbot.png" class="image" />
 <p>The world is seeing the rise of robots and machine intelligence and this is your chance to look at just the tip of the iceberg! The workshop will teach you how to build a robot that obeys your orders and move in the required direction. The voice signals will be processed in a smart phone using an app, sent to the robot wirelessly and the directions will be inferred. You will learn the basics of mobile robots, Arduino microcontrollers, speech recognition, electronics and app development using MIT app inventor. This is your chance to give life to your machines!<br /> <br />For more details or queries, contact :<br />Bala Durgesh ( 98415 49244 )</p><br />
 <div class="info">
-<div class="dont-show" id="design_r">You've registered for this workshop.</div>
-
+<div class="dont-show" id="speech_r">You've registered for this workshop.</div>
+<?php
+	if(isset($_COOKIE['SID'])){
+	if($workshop['speech']==1)
+	echo 'You\'ve registered for this workshop.';
+	else
+	echo '<button id="speech" onclick="workshop_register(this);">Register for this workshop</button>';
+	}
+	else{
+	echo '<i>Kindly login to register.</i>';
+	}
+?>
 </div>
 <div class="line"></div>
 
@@ -89,8 +130,18 @@
 	<li>Instrumentation involved in Aerodynamics modeling.</li>
 <br /> <br />For more details or queries, contact :<br />Sameer ( 94446 41311 )</ul><br />
 <div class="info">
-<div class="dont-show" id="machine_learning_r">You've registered for this workshop.</div>
-
+<div class="dont-show" id="aero_r">You've registered for this workshop.</div>
+<?php
+	if(isset($_COOKIE['SID'])){
+	if($workshop['aero']==1)
+	echo 'You\'ve registered for this workshop.';
+	else
+	echo '<button id="aero" onclick="workshop_register(this);">Register for this workshop</button>';
+	}
+	else{
+	echo '<i>Kindly login to register.</i>';
+	}
+?>
 </div>
 <div class="line"></div>
 
@@ -106,8 +157,18 @@ laptop screen using the Processing IDE. This March, get ready to scan, scribble 
 the natural colors present in the universe. Do attend this workshop to have all the colors of the
 world in your palette!<br /> <br />For more details or queries, contact :<br />Venkatesh ( 73584 05467 )</p><br />
 <div class="info">
-<div class="dont-show" id="brain_wave_r">You've registered for this workshop.</div>
-
+<div class="dont-show" id="techni_r">You've registered for this workshop.</div>
+<?php
+	if(isset($_COOKIE['SID'])){
+	if($workshop['techni']==1)
+	echo 'You\'ve registered for this workshop.';
+	else
+	echo '<button id="techni" onclick="workshop_register(this);">Register for this workshop</button>';
+	}
+	else{
+	echo '<i>Kindly login to register.</i>';
+	}
+?>
 </div>
 <div class="line"></div>
 
@@ -124,8 +185,18 @@ Details about the basics of the circuits used in the glove will be provided in o
 also provide an introduction to single board computers used in wearables.
 Step into the next era with us!<br /> <br />For more details or queries, contact :<br />Subramanian ( 98407 40700 )</p><br />
 <div class="info">
-<div class="dont-show" id="music_production_r">You've registered for this workshop.</div>
-
+<div class="dont-show" id="sign_r">You've registered for this workshop.</div>
+<?php
+	if(isset($_COOKIE['SID'])){
+	if($workshop['sign']==1)
+	echo 'You\'ve registered for this workshop.';
+	else
+	echo '<button id="sign" onclick="workshop_register(this);">Register for this workshop</button>';
+	}
+	else{
+	echo '<i>Kindly login to register.</i>';
+	}
+?>
 </div>
 <div class="line"></div>
 <h1 class="right">D1G1T R3C0GN1S3R</h1><h3>Using Artificial Neural Networks and Machine Learning</h3>
@@ -141,22 +212,32 @@ Artificial Neural Networks, the most widely used algorithm in this field.
 Using an ANN, you'll learn to implement the digit recognizer to make your computer recognize the
 digits written by you.<br /> <br />For more details or queries, contact :<br /> Hemprasad ( 90037 39889 )</p><br />
 <div class="info">
-<div class="dont-show" id="music_production_r">You've registered for this workshop.</div>
+<div class="dont-show" id="digit_r">You've registered for this workshop.</div>
+<?php
+	if(isset($_COOKIE['SID'])){
+	if($workshop['digit']==1)
+	echo 'You\'ve registered for this workshop.';
+	else
+	echo '<button id="digit" onclick="workshop_register(this);">Register for this workshop</button>';
+	}
+	else{
+	echo '<i>Kindly login to register.</i>';
+	}
+?>
+</div>
+<div class="line"></div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
-
-<!--
 <div id="form-container">
-//<?php
+<?php
 //if(isset($_COOKIE['SID']))
 //echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
 //else
 //echo '<button id="login">Login</button> / <a target="_blank" href="../register"> Register</a>';
 ?>
 </div>
--->
+
 <div class="fb-like" style="position:absolute;top:94.5%;right:4%;" data-href="https://www.facebook.com/sensorsNITTrichy/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 	
 <div id="login-container" class="hide">
@@ -178,7 +259,7 @@ digits written by you.<br /> <br />For more details or queries, contact :<br /> 
 
 <script>
 function workshop_register(item){
-$.post( "workshop-register.php", { workshop: $(item).attr("id") }, function(){
+$.post( "../events/event-register.php", { event: $(item).attr("id") }, function(){
 $("#"+$(item).attr("id")+"_r").removeClass('dont-show');
 $("#"+$(item).attr("id")+"_r").addClass('show');
 $("#"+$(item).attr("id")).css('display','none');} );

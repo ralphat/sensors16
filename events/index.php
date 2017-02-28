@@ -1,3 +1,13 @@
+<?php
+ini_set('display_errors','off');
+include '../connect.php';
+if(isset($_COOKIE["SID"])){
+	$id = $db->escape_string($_COOKIE["SID"]);
+	$event_query = "SELECT * FROM `registration` WHERE id = ".$id;
+	$event_list = $db->query($event_query);
+	$event = $event_list->fetch_assoc();
+}
+?>
 <!DOCTYPE html>	
 <html>
 
@@ -45,75 +55,128 @@
 </div>
 
 <div class="tab-container">
-	<button id="moore-" class="tab active" onclick="change(this);">Codequest</button>
-	<button id="paper-" class="tab" onclick="change(this);">Exposition</button>
-	<button id="encipher-" class="tab" onclick="change(this);">The Sensors General Quiz</button>
-	<button id="quiz-" class="tab" onclick="change(this);">Find the TARS – Line Follower Event</button>
-	<button id="sensor-" class="tab" onclick="change(this);">Trial by Tronix</button>
+	<button id="codequest-" class="tab active" onclick="change(this);">Codequest</button>
+	<button id="expo-" class="tab" onclick="change(this);">Paper Exposition</button>
+	<button id="quiz-" class="tab" onclick="change(this);">The Sensors General Quiz</button>
+	<button id="tars-" class="tab" onclick="change(this);">Find the TARS – Line Follower Event</button>
+	<button id="tbyt-" class="tab" onclick="change(this);">Trial by Tronix</button>
 	<button id="gif-" class="tab" onclick="change(this);">GIF Challenge</button>
 </div>
 
 <div class="desc-container">
-	<div id="moore-d" class="show">
+	<div id="codequest-d" class="show">
 		<h2>CODEQUEST</h2>
 		<p>if (You’re a coder)<br />goto Sensors;<br />else<br />Printf("Well, there’s no better place to start learning!");<br />Sensors:<br />Printf(“ Participate in Codequest\n Run your fingers through the keyboard\n Compile your brains out and watch the magic unfold onscreen”);</p>
 		<p><a href="./codequest.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description and FAQs.</p>
-		<p><b>EVENT MANAGERS :</b><br />Ankit ( 82202 93471 ) <br /> Muralidharan ( 80983 88128 )</p></br>
-		<div class="dont-show" id="moores_labyrinth_r">You've registered for Codequest.</div>
+		<p><b>EVENT MANAGERS :</b><br />Ankit ( 82202 93471 ) <br /> Muralidharan ( 80983 88128 )</p><br />
+		<div class="dont-show" id="codequest_r">You've registered for Codequest.</div>
+		<?php
+			if(isset($_COOKIE['SID'])){
+			if($event['codequest']==1)
+			echo 'You\'ve registered for Codequest';
+			else
+			echo '<button id="codequest" onclick="event_register(this);">Register for Codequest</button>';
+			}
+			else{
+			echo '<i>Kindly login to register.</i>';
+			}
+		?>
 	</div>
 	
-	<div id="paper-d" class="dont-show">
-	<h2>PAPER EXPOSITION</h2>
-	<p><b>Small minds discuss people, Average minds discuss events, Great minds discuss ideas<br />~ Eleanor Roosevelt</b></p>
-	<p>Sensors serves as an amazing platform to bring out your interests, talents and depth of knowledge in your preferred domains. We invite you to present your ideas to inquisitive minds from the engineering world, in this technical extravaganza.</p>
-	<p><a href="./paper_exposition.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description and FAQs.</p>
-	<p><b>EVENT MANAGERS :</b><br />Apuroop ( 82202 85481 )<br />Vaneesha ( 99522 14684 )</p></p> </br>
-	<div class="dont-show" id="paper_presentation_r">You've registered for Paper Exposition.</div>
-	
-	</div>
-	
-	<div id="encipher-d" class="dont-show">
-	<h2>THE SENSORS GENERAL QUIZ</h2>
-	<p>It's at this time that the tidbits of trivia you accumulated over time come in handy. Participate in this general themed quiz, work out questions and rack your head until the answer finally strikes you!</p>
-	<p><b>EVENT RULES:</b><br />
-	- Teams of 3, from colleges only. No restrictions on number of teams.<br />
-	- Written prelims followed by finals.<br />
-	- It is a general quiz, not specific to instrumentation and control.<br />
-	- 6-8 teams qualify for finals.</p><p><b>EVENT MANAGER :</b><br />Surya ( 96889 71832 )</p></br>
-	<div class="dont-show" id="encipher_r">You've registered for The Sensors General Quiz.</div>
+	<div id="expo-d" class="dont-show">
+		<h2>PAPER EXPOSITION</h2>
+		<p><b>Small minds discuss people, Average minds discuss events, Great minds discuss ideas<br />~ Eleanor Roosevelt</b></p>
+		<p>Sensors serves as an amazing platform to bring out your interests, talents and depth of knowledge in your preferred domains. We invite you to present your ideas to inquisitive minds from the engineering world, in this technical extravaganza.</p>
+		<p><a href="./paper_exposition.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description and FAQs.</p>
+		<p><b>EVENT MANAGERS :</b><br />Apuroop ( 82202 85481 )<br />Vaneesha ( 99522 14684 )</p><br />
+		<div class="dont-show" id="expo_r">You've registered for Paper Exposition.</div>
+		<?php
+			if(isset($_COOKIE['SID'])){
+			if($event['expo']==1)
+			echo 'You\'ve registered for Paper presentation.';
+			else
+			echo '<button id="expo" onclick="event_register(this);">Register for Paper Exposition</button>';
+			}
+			else{
+			echo '<i>Kindly login to register.</i>';
+			}
+		?>
 	</div>
 	
 	<div id="quiz-d" class="dont-show">
-	<h2>FIND THE TARS – LINE FOLLOWER EVENT</h2>
-	<p>A new face has been added to the solar system's family portrait : Scientists have discovered a new dwarf planet looping around the sun in the region beyond Pluto. TARS is a car-sized robotic rover exploring on this planet to collect information. It has to reach the base station within the stipulated time but it hasn’t returned yet.</p>
-	<p>Build an autonomous line follower robot which would negotiate through checkpoints, sharp turns and determine the correct path to find TARS.</p>
-	<p><a href="./TARS_FAQ.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description and FAQs.</p>
-	<p><b>EVENT MANAGERS :</b><br />Lokesh ( 89037 81031 )<br />Sathwik ( 82202 99470 )</p></br>
-	<div class="dont-show" id="quiz_r">You've registered for Find the TARS.</div>
-	
+		<h2>THE SENSORS GENERAL QUIZ</h2>
+		<p>It's at this time that the tidbits of trivia you accumulated over time come in handy. Participate in this general themed quiz, work out questions and rack your head until the answer finally strikes you!</p>
+		<p><b>EVENT RULES:</b><br />
+		- Teams of 3, from colleges only. No restrictions on number of teams.<br />
+		- Written prelims followed by finals.<br />
+		- It is a general quiz, not specific to instrumentation and control.<br />
+		- 6-8 teams qualify for finals.</p><p><b>EVENT MANAGER :</b><br />Surya ( 96889 71832 )</p><br />
+		<div class="dont-show" id="quiz_r">You've registered for The Sensors General Quiz.</div>
+		<?php
+			if(isset($_COOKIE['SID'])){
+			if($event['quiz']==1)
+			echo 'You\'ve registered for Paper presentation.';
+			else
+			echo '<button id="quiz" onclick="event_register(this);">Register for The Sensors General Quiz</button>';
+			}
+			else{
+			echo '<i>Kindly login to register.</i>';
+			}
+		?>
 	</div>
 	
-	<div id="sensor-d" class="dont-show">
-	<h2>TRIAL BY TRONIX</h2>
-	<p>For those who have been longing for an opportunity to flaunt their circuit design skills – the ultimate challenge to test your electronics knowledge is here. The event consists of two rounds: with a preliminary written round and a final hardware round. The written round will comprise of questions on basic analog, digital electronics and circuit design tasks. Around 8-10 teams will be shortlisted based on their performance to participate in the final round which involves the practical implementation of circuits for problem statements given on the spot.</p>
-	<p><a href="./Trial_By_Tronix_Description.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description of the event.</p>
-	<p><a href="./trail_by_tronics.pdf" style="color: #add8e6">Click here</a>&nbsp; for the Rules.</p>
-	<p><a href="./trailbytronix_FAQ.pdf" style="color: #add8e6">Click here</a>&nbsp; for FAQs.</p>
-	<p><b>EVENT MANAGERS :</b><br /> Krishna ( 87542 18578 )<br />Tejaswi ( 9487949352 )</p></br>
-	<div class="dont-show" id="sensor_design_r">You've registered for Sensor Design.</div>
+	<div id="tars-d" class="dont-show">
+		<h2>FIND THE TARS – LINE FOLLOWER EVENT</h2>
+		<p>A new face has been added to the solar system's family portrait : Scientists have discovered a new dwarf planet looping around the sun in the region beyond Pluto. TARS is a car-sized robotic rover exploring on this planet to collect information. It has to reach the base station within the stipulated time but it hasn’t returned yet.</p>
+		<p>Build an autonomous line follower robot which would negotiate through checkpoints, sharp turns and determine the correct path to find TARS.</p>
+		<p><a href="./TARS_FAQ.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description and FAQs.</p>
+		<p><b>EVENT MANAGERS :</b><br />Lokesh ( 89037 81031 )<br />Sathwik ( 82202 99470 )</p><br />
+		<div class="dont-show" id="tars_r">You've registered for Find the TARS.</div>
+		<?php
+			if(isset($_COOKIE['SID'])){
+			if($event['tars']==1)
+			echo 'You\'ve registered for Find the TARS.';
+			else
+			echo '<button id="tars" onclick="event_register(this);">Register for Find the TARS</button>';
+			}
+			else{
+			echo '<i>Kindly login to register.</i>';
+			}
+		?>
+	</div>
+	
+	<div id="tbyt-d" class="dont-show">
+		<h2>TRIAL BY TRONIX</h2>
+		<p>For those who have been longing for an opportunity to flaunt their circuit design skills – the ultimate challenge to test your electronics knowledge is here. The event consists of two rounds: with a preliminary written round and a final hardware round. The written round will comprise of questions on basic analog, digital electronics and circuit design tasks. Around 8-10 teams will be shortlisted based on their performance to participate in the final round which involves the practical implementation of circuits for problem statements given on the spot.</p>
+		<p><a href="./Trial_By_Tronix_Description.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description of the event.</p>
+		<p><a href="./trail_by_tronics.pdf" style="color: #add8e6">Click here</a>&nbsp; for the Rules.</p>
+		<p><a href="./trailbytronix_FAQ.pdf" style="color: #add8e6">Click here</a>&nbsp; for FAQs.</p>
+		<p><b>EVENT MANAGERS :</b><br /> Krishna ( 87542 18578 )<br />Tejaswi ( 9487949352 )</p><br />
+		<div class="dont-show" id="tbyt_r">You've registered for Sensor Design.</div>
+		<?php
+			if(isset($_COOKIE['SID'])){
+			if($event['tbyt']==1)
+			echo 'You\'ve registered for Trial by Tronix.';
+			else
+			echo '<button id="tbyt" onclick="event_register(this);">Register for Trial by Tronix</button>';
+			}
+			else{
+			echo '<i>Kindly login to register.</i>';
+			}
+		?>
 	</div>
 	
 	<div id="gif-d" class="dont-show">
-	<h2>GIF CHALLENGE</h2>
-	<p>We know that you love to see GIFs on Facebook, Twitter and every other social platform. GIFs are one of the most trending modes of visuals now. But have you ever tried making one? Here is your opportunity to create a GIF. Not just create one, but also win prizes worth Rs.4,000!</p>
- 	<p>Sharpen your Brains and let your Creativity, Comic sense and Craziness flow. Create your own GIFs and post them on your FB Timeline or on your friend’s timeline ( :P ). Simply use the hashtag “#GIFSensors17” in your description to submit your GIF.</p>
-	<p>Play it. Loop it.</p>
-	<p><b>P.S.</b> : The GIFs created cannot directly be uploaded onto Facebook. Please find the section “Directions to post GIF on Facebook” to know the procedure.</p>
-	<p><b>Deadline for submissions</b> :  March 11th , 2017 before 11:59pm.</p>
-	<p><b>Prizes Worth</b> : Rs.4,000. </p>
-    <p>Contact : Apuroop ( 82202 85481 )</p>
-	<p><a href="./gif.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description of the event.</p>
-	<div class="dont-show" id="gif_r">You've registered for Sensor Design.</div>
+		<h2>GIF CHALLENGE</h2>
+		<p>We know that you love to see GIFs on Facebook, Twitter and every other social platform. GIFs are one of the most trending modes of visuals now. But have you ever tried making one? Here is your opportunity to create a GIF. Not just create one, but also win prizes worth Rs.4,000!</p>
+	 	<p>Sharpen your Brains and let your Creativity, Comic sense and Craziness flow. Create your own GIFs and post them on your FB Timeline or on your friend’s timeline ( :P ). Simply use the hashtag “#GIFSensors17” in your description to submit your GIF.</p>
+		<p>Play it. Loop it.</p>
+		<p><b>P.S.</b> : The GIFs created cannot directly be uploaded onto Facebook. Please find the section “Directions to post GIF on Facebook” to know the procedure.</p>
+		<p><b>Deadline for submissions</b> :  March 11th , 2017 before 11:59pm.</p>
+		<p><b>Prizes Worth</b> : Rs.4,000. </p>
+	    <p>Contact : Apuroop ( 82202 85481 )</p>
+		<p><a href="./gif.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description of the event.</p>
+		<!--<div class="dont-show" id="gif_r">You've registered for Sensor Design.</div>-->
 	</div>
 
 </div>
@@ -121,16 +184,16 @@
 <div id="marquee-container"><marquee onmouseover="this.stop();" onmouseout="this.start();">Rule book updated.&nbsp;<a target="_blank" style="text-decoration:underline;color:#fff;margin-right:100%;" href="./rulebook.pdf">Click here to download rulebook</a>The deadline for paper presentaion is 6pm, 9th of March, 2016. Kindly submit it to paperpresentaion@sensors.org.in</marquee></div>
 -->
 <div class="fb-like" style="position:absolute;top:94.5%;right:4%;" data-href="https://www.facebook.com/sensorsNITTrichy/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
-<!--
+
 <div id="form-container">
-//<?php
+<?php
 //if(isset($_COOKIE['SID']))
 //echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
 //else
 //echo '<button id="login">Login</button> / <a target="_blank" href="../register"> Register</a>';
 ?>
 </div>
--->
+
 <div id="login-container" class="hide">
 <form id="login-form">
 <div class="label"><b>Email ID or Sensors ID</b></div>
@@ -189,27 +252,27 @@ $.post("../verify.php",
 function change(item){
 var id= $(item).attr("id");
 
-$("#moore-").removeClass("active");
-$("#paper-").removeClass("active");
-$("#encipher-").removeClass("active");
+$("#codequest-").removeClass("active");
+$("#expo-").removeClass("active");
 $("#quiz-").removeClass("active");
-$("#sensor-").removeClass("active");
+$("#tars-").removeClass("active");
+$("#tbyt-").removeClass("active");
 $("#gif-").removeClass("active");
 
 $("#"+id).addClass("active");
 
-$("#moore-d").removeClass("show");
-$("#paper-d").removeClass("show");
-$("#encipher-d").removeClass("show");
+$("#codequest-d").removeClass("show");
+$("#expo-d").removeClass("show");
 $("#quiz-d").removeClass("show");
-$("#sensor-d").removeClass("show");
+$("#tars-d").removeClass("show");
+$("#tbyt-d").removeClass("show");
 $("#gif-d").removeClass("show");
 
-$("#moore-d").addClass("dont-show");
-$("#paper-d").addClass("dont-show");
-$("#encipher-d").addClass("dont-show");
+$("#codequest-d").addClass("dont-show");
+$("#expo-d").addClass("dont-show");
 $("#quiz-d").addClass("dont-show");
-$("#sensor-d").addClass("dont-show");
+$("#tars-d").addClass("dont-show");
+$("#tbyt-d").addClass("dont-show");
 $("#gif-d").addClass("dont-show");
 
 $("#"+id+"d").removeClass("dont-show");
