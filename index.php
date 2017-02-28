@@ -2,6 +2,7 @@
 <html>
 
 <head>
+        <meta name="google-site-verification" content="AKxlCqUFO0nn7TVv3ocOMbn_oGaKuBOLnWkEI04upoE" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
 	<meta name="viewport" content="height=device-height, initial-scale=0.5, maximum-scale=1"/>

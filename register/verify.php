@@ -4,10 +4,10 @@ ini_set('display_errors','off');
 //ini_set('display_errors', 1);
 include '../connect.php';
 
-$username = $_POST['id'];
+$username = $_GET['id'];
 
 if($username){
-	$sql = "SELECT * FROM `main` where `email`='".$username."'";
+	$sql = "SELECT * FROM `main` where MD5(email) = '".$username."'";
 	if(!$result = $db->query($sql)){
 	    die('There was an error running the query [' . $db->error . ']');
 	}
@@ -17,6 +17,11 @@ if($username){
 		echo $id;
 		$update_query = "UPDATE `main` SET registered = 1 where `email`='".$username."'";
 		if(!$result = $db->query($update_query)){
+	    	die('There was an error running the query [' . $db->error . ']');
+		}
+		$insert = "INSERT INTO `registration` VALUES ('".$id."', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0')";
+		//echo $insert;
+		if(!$result = $db->query($insert)){
 	    	die('There was an error running the query [' . $db->error . ']');
 		}
 	} else {
