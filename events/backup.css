@@ -1,7 +1,7 @@
 .tab-container{
 position:absolute;
 top:25%;
-left:-1%;
+left:5%;
 width:20%;
 height:50%;
 padding:2% 5% 0% 5%;
@@ -11,8 +11,8 @@ border-right:1px solid #fff;
 .desc-container{
 position:absolute;
 top:23%;
-left:34%;
-width:55%;
+left:40%;
+width:40%;
 height:50%;
 padding:2% 3% 2% 5%;
 font-family:"Source Sans Pro";
@@ -87,16 +87,3 @@ background-color:rgb(2,73,134,0.3);
 top:85%;
 }
 }
-
-
-#schedule-container{
-align-items: center;
-justify-content: center;
-position:absolute;
-top:83%;
-left:36%;
-font-family:"Source Sans Pro";
-font-size:15px;
-color:#fff
-}
-

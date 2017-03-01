@@ -33,10 +33,10 @@
 <!--
 <div id="form-container">
 <?php
-//if(isset($_COOKIE['SID']))
-//echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
-//else
-//echo '<button id="login">Login</button> / <a target="_blank" href="./register"> Register</a>';
+if(isset($_COOKIE['SID']))
+echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
+else
+echo '<button id="login">Login</button> / <a target="_blank" href="./register"> Register</a>';
 ?>
 </div>
 -->
@@ -56,10 +56,10 @@
 
 <div id="form-container">
 <?php
-//if(isset($_COOKIE['SID']))
-//echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
-//else
-//echo '<button id="login">Login</button> / <a target="_blank" href="./register">Register</a>';
+if(isset($_COOKIE['SID']))
+echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
+else
+echo '<button id="login">Login</button> / <a target="_blank" href="./register">Register</a>';
 ?>
 </div>
 	
@@ -85,7 +85,7 @@ Tip: Try to remove the background-attachment property to remove the scrolling ef
 
 <div id="login-container" class="hide">
 <form id="login-form">
-<div class="label"><b>Email ID or Sensors ID</b></div>
+<div class="label"><b>Email ID</b></div>
 <input type="text" name="username" id="username" />
 <div class="label"><b>Password</b></div>
 <input type="password" name="pass" id="pass" />

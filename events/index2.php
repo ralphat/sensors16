@@ -59,7 +59,7 @@ if(isset($_COOKIE["SID"])){
 	<button id="expo-" class="tab" onclick="change(this);">Paper Exposition</button>
 	<button id="quiz-" class="tab" onclick="change(this);">The Sensors General Quiz</button>
 	<button id="tars-" class="tab" onclick="change(this);">Find the TARS – Line Follower Event</button>
-	<button id="tbyt-" class="tab" onclick="change(this);">Trail by Tronix</button>
+	<button id="tbyt-" class="tab" onclick="change(this);">Trial by Tronix</button>
 	<button id="gif-" class="tab" onclick="change(this);">GIF Challenge</button>
 </div>
 
@@ -68,9 +68,7 @@ if(isset($_COOKIE["SID"])){
 		<h2>CODEQUEST</h2>
 		<p>if (You’re a coder)<br />goto Sensors;<br />else<br />Printf("Well, there’s no better place to start learning!");<br />Sensors:<br />Printf(“ Participate in Codequest\n Run your fingers through the keyboard\n Compile your brains out and watch the magic unfold onscreen”);</p>
 		<p><a href="./codequest.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description and FAQs.</p>
-		<p><b>EVENT SCHEDULE&nbsp;:&nbsp;</b>12 March 2017<br />First round will begin at 09:30 am
-		<br />Final Round will begin at 11:30 am.</p>
-		<p><b>EVENT MANAGERS &nbsp;:</b><br />Ankit ( 82202 93471 ) <br /> Muralidharan ( 80983 88128 )</p><br />
+		<p><b>EVENT MANAGERS :</b><br />Ankit ( 82202 93471 ) <br /> Muralidharan ( 80983 88128 )</p><br />
 		<div class="dont-show" id="codequest_r">You've registered for Codequest.</div>
 		<?php
 			if(isset($_COOKIE['SID'])){
@@ -90,8 +88,7 @@ if(isset($_COOKIE["SID"])){
 		<p><b>Small minds discuss people, Average minds discuss events, Great minds discuss ideas<br />~ Eleanor Roosevelt</b></p>
 		<p>Sensors serves as an amazing platform to bring out your interests, talents and depth of knowledge in your preferred domains. We invite you to present your ideas to inquisitive minds from the engineering world, in this technical extravaganza.</p>
 		<p><a href="./paper_exposition.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description and FAQs.</p>
-		<p><b>EVENT SCHEDULE &nbsp;:&nbsp;</b>11 March 2017 - 01:30 pm to 04:30 pm</p>
-		<p><b>EVENT MANAGERS &nbsp;:</b><br />Apuroop ( 82202 85481 )<br />Vaneesha ( 99522 14684 )</p><br />
+		<p><b>EVENT MANAGERS :</b><br />Apuroop ( 82202 85481 )<br />Vaneesha ( 99522 14684 )</p><br />
 		<div class="dont-show" id="expo_r">You've registered for Paper Exposition.</div>
 		<?php
 			if(isset($_COOKIE['SID'])){
@@ -113,9 +110,7 @@ if(isset($_COOKIE["SID"])){
 		- Teams of 3, from colleges only. No restrictions on number of teams.<br />
 		- Written prelims followed by finals.<br />
 		- It is a general quiz, not specific to instrumentation and control.<br />
-		- 6-8 teams qualify for finals.</p>
-		<p><b>EVENT SCHEDULE&nbsp;:&nbsp;</b>12 March 2017 - 2 pm to 5 pm</p>
-		<p><b>EVENT MANAGER&nbsp; :</b><br />Surya ( 96889 71832 )</p><br />
+		- 6-8 teams qualify for finals.</p><p><b>EVENT MANAGER :</b><br />Surya ( 96889 71832 )</p><br />
 		<div class="dont-show" id="quiz_r">You've registered for The Sensors General Quiz.</div>
 		<?php
 			if(isset($_COOKIE['SID'])){
@@ -134,9 +129,8 @@ if(isset($_COOKIE["SID"])){
 		<h2>FIND THE TARS – LINE FOLLOWER EVENT</h2>
 		<p>A new face has been added to the solar system's family portrait : Scientists have discovered a new dwarf planet looping around the sun in the region beyond Pluto. TARS is a car-sized robotic rover exploring on this planet to collect information. It has to reach the base station within the stipulated time but it hasn’t returned yet.</p>
 		<p>Build an autonomous line follower robot which would negotiate through checkpoints, sharp turns and determine the correct path to find TARS.</p>
-		<p><b>EVENT SCHEDULE &nbsp;: &nbsp;</b>11 March 2017 - 09:30 am to 5 pm</p>
 		<p><a href="./TARS_FAQ.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description and FAQs.</p>
-		<p><b>EVENT MANAGERS &nbsp; : </b><br />Lokesh ( 89037 81031 )<br />Sathwik ( 82202 99470 )</p><br />
+		<p><b>EVENT MANAGERS :</b><br />Lokesh ( 89037 81031 )<br />Sathwik ( 82202 99470 )</p><br />
 		<div class="dont-show" id="tars_r">You've registered for Find the TARS.</div>
 		<?php
 			if(isset($_COOKIE['SID'])){
@@ -152,20 +146,19 @@ if(isset($_COOKIE["SID"])){
 	</div>
 	
 	<div id="tbyt-d" class="dont-show">
-		<h2>TRAIL BY TRONIX</h2>
+		<h2>TRIAL BY TRONIX</h2>
 		<p>For those who have been longing for an opportunity to flaunt their circuit design skills – the ultimate challenge to test your electronics knowledge is here. The event consists of two rounds: with a preliminary written round and a final hardware round. The written round will comprise of questions on basic analog, digital electronics and circuit design tasks. Around 8-10 teams will be shortlisted based on their performance to participate in the final round which involves the practical implementation of circuits for problem statements given on the spot.</p>
 		<p><a href="./Trial_By_Tronix_Description.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description of the event.</p>
 		<p><a href="./trail_by_tronics.pdf" style="color: #add8e6">Click here</a>&nbsp; for the Rules.</p>
 		<p><a href="./trailbytronix_FAQ.pdf" style="color: #add8e6">Click here</a>&nbsp; for FAQs.</p>
-		<p><b>EVENT SCHEDULE &nbsp;:&nbsp;</b>11 March 2017<br /> First Round - 10 am to 12pm<br />Final Round - 2pm to 5pm</p>
-		<p><b>EVENT MANAGERS &nbsp;:</b><br /> Krishna ( 87542 18578 )<br />Tejaswi ( 9487949352 )</p><br />
+		<p><b>EVENT MANAGERS :</b><br /> Krishna ( 87542 18578 )<br />Tejaswi ( 9487949352 )</p><br />
 		<div class="dont-show" id="tbyt_r">You've registered for Sensor Design.</div>
 		<?php
 			if(isset($_COOKIE['SID'])){
 			if($event['tbyt']==1)
-			echo 'You\'ve registered for Trail by Tronix.';
+			echo 'You\'ve registered for Trial by Tronix.';
 			else
-			echo '<button id="tbyt" onclick="event_register(this);">Register for Trail by Tronix</button>';
+			echo '<button id="tbyt" onclick="event_register(this);">Register for Trial by Tronix</button>';
 			}
 			else{
 			echo '<i>Kindly login to register.</i>';
@@ -194,16 +187,16 @@ if(isset($_COOKIE["SID"])){
 
 <div id="form-container">
 <?php
-if(isset($_COOKIE['SID']))
-echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
-else
-echo '<button id="login">Login</button> / <a target="_blank" href="../register"> Register</a>';
+//if(isset($_COOKIE['SID']))
+//echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>';
+//else
+//echo '<button id="login">Login</button> / <a target="_blank" href="../register"> Register</a>';
 ?>
 </div>
 
 <div id="login-container" class="hide">
 <form id="login-form">
-<div class="label"><b>Email ID</b></div>
+<div class="label"><b>Email ID or Sensors ID</b></div>
 <input type="text" name="username" id="username" />
 <div class="label"><b>Password</b></div>
 <input type="password" name="pass" id="pass" />

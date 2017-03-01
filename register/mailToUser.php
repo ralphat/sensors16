@@ -21,7 +21,7 @@ $mail = new PHPMailer();  // create a new object
 
 	$mail->Body .= '<p>Hello '.$_POST["name"].',</p><p>Greetings from Sensors\'17!</p><br /><p>Thank you for registering with us at sensors.org.in. Here are the credentials you provided during registration :<br />Username : '.$_POST["email"].'<br />Password : '.$_POST['password'].' <br />Hit the following link to activate your account and complete registration.</p>';
 
-	$mail->Body .= '<p>sensors.org.in/register/verify.php?id='.md5($_POST["email"]).'</p><br /><p>Kindly ignore if you did no such registration.</p><p>Regards,<br />Sensors\'16 Team</p>';
+	$mail->Body .= '<p>sensors.org.in/register/verify.php?id='.md5($_POST["email"]).'</p><br /><p>Kindly ignore if you did no such registration.</p><p>Regards,<br />Sensors\'17 Team</p>';
 
 	 
 	$mail->Body .= '</body></html>';
