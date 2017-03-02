@@ -58,6 +58,71 @@ opacity: 1;
 #sca h1{
 position: absolute;
 top: 90%;
-left: 38%;
+left: 35%;
 color: white;
 }
+
+#uniq{
+position:absolute;
+top:7%;
+left:3%;
+height:10%;
+}
+
+#uniq-container{
+position:absolute;
+text-align:center;
+height:auto;
+padding:6px;
+width:150x;
+bottom:2%;
+left:70%;
+font-size:13px;
+color:#fff;
+background-color:rgba(255,255,255,0.1);
+}
+
+#uniq-link{
+text-align:center;
+width:100%;
+display:none;
+font-size:13px;
+padding:10px 0px 10px 0px;
+}
+#uniq-link a{
+color:#fff;
+padding-bottom:10px;
+text-decoration:none;
+}
+#uniq-link a:hover{
+text-decoration:underline;
+}
+
+#uniq-container:hover #uniq-link, #uniq-container:active #uniq-link{
+display:block;
+background-color:rgba(0,0,0,0.8);
+}
+
+@media only screen and (orientation:portrait){
+#background-container{
+width:200%;
+height:100%;
+}
+
+#fbLike{
+left:180%;
+}
+
+#uniq-container{
+left:140%;
+bottom:3%;
+}
+}
+
+
+@media only screen and (max-device-width: 480px) {
+#login-container{
+width:200%;
+}
+}
+
