@@ -199,6 +199,7 @@ echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>
 else
 echo '<button id="login">Login</button> / <a target="_blank" href="../register"> Register</a>';
 ?>
+<a target="_blank" href="http://www.uniqtechnologies.co.in/"><img id="uniq_login" src="../uniq/uniq.jpg" /></a>
 </div>
 
 <div id="login-container" class="hide">
@@ -214,6 +215,19 @@ echo '<button id="login">Login</button> / <a target="_blank" href="../register">
 <div class="label">New user? Click here to <a href="../register">register</a></div>
 <div id="return">Return to previous page</div>
 </form>
+</div>
+
+<div id="uniq-container">
+<div id="uniq-link">
+<hr>
+<a href="http://www.inplanttraining.org/">Inplant training</a><br /><br />
+<a href="http://www.internshipinchennai.com/">Internship</a><br /><br />
+<a href="http://www.ieeefinalyearprojects.org/">IEEE projects</a><br /><br />
+<a href="http://www.androidtraininginchennai.com/">Android training</a><br /><br />
+<hr>
+<div class="fb-like" data-href="https://www.facebook.com/uniqtechnologies/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+</div>
+<div>UNIQ Technologies</div>
 </div>
 
 </body>

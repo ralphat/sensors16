@@ -273,7 +273,7 @@ Day 2: (12/3/2017)
 Morning slot: 9am to 1pm
 Evening slot:  2pm to 6pm
 <br>
-All 7 workshops will happen simaltaneously.</p>
+All 7 workshops will happen simultaneously.</p>
 </div>
 <div id="form-container">
 <?php
@@ -282,6 +282,7 @@ echo 'Logged in as SID '.$_COOKIE['SID'].'. <button id="logout"> Logout</button>
 else
 echo '<button id="login">Login</button> / <a target="_blank" href="../register"> Register</a>';
 ?>
+<a target="_blank" href="http://www.uniqtechnologies.co.in/"><img id="uniq_login" src="../uniq/uniq.jpg" /></a>
 </div>
 
 <div class="fb-like" style="position:absolute;top:94.5%;right:4%;" data-href="https://www.facebook.com/sensorsNITTrichy/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
@@ -299,6 +300,19 @@ echo '<button id="login">Login</button> / <a target="_blank" href="../register">
 <div class="label">New user? Click here to <a href="../register">register</a></div>
 <div id="return">Return to previous page</div>
 </form>
+</div>
+
+<div id="uniq-container">
+<div id="uniq-link">
+<hr>
+<a href="http://www.inplanttraining.org/">Inplant training</a><br /><br />
+<a href="http://www.internshipinchennai.com/">Internship</a><br /><br />
+<a href="http://www.ieeefinalyearprojects.org/">IEEE projects</a><br /><br />
+<a href="http://www.androidtraininginchennai.com/">Android training</a><br /><br />
+<hr>
+<div class="fb-like" data-href="https://www.facebook.com/uniqtechnologies/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+</div>
+<div>UNIQ Technologies</div>
 </div>
 
 </body>

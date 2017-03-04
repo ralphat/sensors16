@@ -14,8 +14,8 @@
 	
     <link rel = "shortcut icon" href = "./tab_image.ico"/>
 	<link type="text/css" rel="stylesheet" href="normalise.css" />
-	<link type="text/css" rel="stylesheet" href="common.css" />
 	<link type="text/css" rel="stylesheet" href="style_edited.css" />
+	<link type="text/css" rel="stylesheet" href="common.css" />
         
 
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>

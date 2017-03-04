@@ -21,6 +21,13 @@ opacity:1;
 border-bottom:1px solid #fff;
 }
 
+#uniq_login{
+position:absolute;
+top:-35%;
+right: -85%;
+width: 70%;
+}
+
 #login-container{
 position:absolute;
 width:100%;
@@ -76,13 +83,50 @@ background-color:#024986;
 display:none;
 }
 
+#uniq-container{
+position:absolute;
+text-align:center;
+height:auto;
+padding:5px;
+width:8%;
+bottom:2.5%;
+left:79.4%;
+font-size:11px;
+color:#fff;
+background-color:rgba(255,255,255,0.1);
+}
+
+#uniq-link{
+text-align:center;
+width:100%;
+display:none;
+font-size:13px;
+padding:10px 0px 10px 0px;
+}
+#uniq-link a{
+color:#fff;
+padding-bottom:10px;
+text-decoration:none;
+}
+#uniq-link a:hover{
+text-decoration:underline;
+}
+
+#uniq-container:hover #uniq-link, #uniq-container:active #uniq-link{
+display:block;
+background-color:rgba(0,0,0,0.8);
+}
+
+body{
+background-color: black;
+}
 
 #bg{
 position:absolute;
 width:100%;
 min-height:100%;
 height:auto;
-margin-bottom:30px;
+margin-bottom: 10px;
 background-image:url('./website/website_bg.png');
 background-size:100% 100%;
 overflow-y:hidden;
