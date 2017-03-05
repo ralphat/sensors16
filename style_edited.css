@@ -69,40 +69,6 @@ left:3%;
 height:10%;
 }
 
-#uniq-container{
-position:absolute;
-text-align:center;
-height:auto;
-padding:6px;
-width:150x;
-bottom:2%;
-left:70%;
-font-size:13px;
-color:#fff;
-background-color:rgba(255,255,255,0.1);
-}
-
-#uniq-link{
-text-align:center;
-width:100%;
-display:none;
-font-size:13px;
-padding:10px 0px 10px 0px;
-}
-#uniq-link a{
-color:#fff;
-padding-bottom:10px;
-text-decoration:none;
-}
-#uniq-link a:hover{
-text-decoration:underline;
-}
-
-#uniq-container:hover #uniq-link, #uniq-container:active #uniq-link{
-display:block;
-background-color:rgba(0,0,0,0.8);
-}
-
 @media only screen and (orientation:portrait){
 #background-container{
 width:200%;
