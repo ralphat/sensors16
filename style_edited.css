@@ -3,6 +3,11 @@ height: 100%;
 margin: 0;
 }
 
+@font-face{
+	font-family: 'PH';
+	src: url('./ph/PH-600RegularCaps.otf');
+}
+
 .parallax {
 position:absolute; 
 background-image:url("./website/website_bg.png");
@@ -28,38 +33,15 @@ width: 75%;
 height: 33%;
 }
 
-#workshops-link, #events-link, #about-link, #contact-link{
-position:absolute;
-width:31.5%;
-height: 55%;
-top: -5%;
-left: 18.8%;
-opacity: 0.7;
-}
-
-#events-link{
-left: 49.7%;
-}
-
-#about-link{
-top: 47.5%;
-left: 19%;
-}
-
-#contact-link{
-top: 47.5%;
-left: 49.5%;
-}
-
-#workshops-link:hover, #events-link:hover, #about-link:hover, #contact-link:hover{
+.workshops-link:hover, .events-link:hover, .about-link:hover, .contact-link:hover{
 opacity: 1;
 }
 
-#sca h1{
-position: absolute;
-top: 90%;
-left: 35%;
-color: white;
+#sca {
+	position: absolute;
+	font-size: 18px;
+	color: white;
+	font-family: 'PH';
 }
 
 #uniq{
@@ -85,10 +67,80 @@ bottom:3%;
 }
 }
 
-
-@media only screen and (max-device-width: 480px) {
-#login-container{
-width:200%;
+@media (min-width: 1200px) {
+.block1{
+	position: absolute;
+	top: 5%;
+}
+.block2{
+	position: absolute;
+	top: 35%;
+}
+.block3{
+	position: absolute;
+	top: 53%;
+}
+.workshops-link, .events-link, .about-link, .contact-link{
+	opacity: 0.7;
+}
+#sca {
+	top: 87%;
+	left: 27%;
+	font-size: 500%;
 }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+.block1{
+	position: absolute;
+	top: 10%;
+}
+.block2{
+	position: absolute;
+	top: 37%;
+}
+.block3{
+	position: absolute;
+	top: 52%;
+}
+.workshops-link, .events-link, .about-link, .contact-link{
+	opacity: 0.7;
+}
+#sca {
+	top: 80%;
+	left: 33%;
+	font-size: 300%;
+}
+}
+
+@media (max-width: 767px) {
+.workshops-link, .events-link, .about-link, .contact-link{
+	width: 44%;
+}
+.sensors_middle{
+	width: 98%;
+}
+.events-link, .contact-link{
+	position: absolute;
+	left: 47%;
+}
+.block1{
+	position: absolute;
+	top: 15%;
+	left: 1%;
+}
+.block2{
+	position: absolute;
+	top: 37%;
+	left: 2%;
+}
+.block3{
+	position: absolute;
+	top: 49%;
+	left: 1%;
+}
+#sca {
+	top: 75%;
+	left: 30%;
+}
+}
