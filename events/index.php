@@ -188,7 +188,7 @@ if(isset($_COOKIE["SID"])){
 
 </div>
 
-<div id="marquee-container"><marquee onmouseover="this.stop();" onmouseout="this.start();">The deadline for paper exposition has been extended to 8am, 8th of March, 2017. </marquee></div>
+<div id="marquee-container"><marquee onmouseover="this.stop();" onmouseout="this.start();">The deadline for paper exposition has been extended to 11:59 am, 8th of March, 2017. </marquee></div>
 
 <div class="fb-like" style="position:absolute;top:94.5%;right:4%;" data-href="https://www.facebook.com/sensorsNITTrichy/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 
