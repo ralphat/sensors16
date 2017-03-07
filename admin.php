@@ -50,7 +50,12 @@ $result = $db->query($sql);
 				<th>#</th>
 				<th>Id</th>
 				<th>Name</th>
+				<th>Date of Birth</th>
 				<th>College</th>
+				<th>Department</th>
+				<th>Year</th>
+				<th>Phone Number</th>
+				<th>Email Id</th>
 				<th>Codequest</th>
 				<th>Paper Expo</th>
 				<th>Quiz</th>
@@ -79,7 +84,12 @@ $result = $db->query($sql);
 				<td><?php echo $i; $i++; ?></td>
 				<td><?php echo $row["id"]; ?></td>
 				<td><?php echo $row["name"]; ?></td>
+				<td><?php echo $row["dateofbirth"]; ?></td>
 				<td><?php echo $row["college"]; ?></td>
+				<td><?php echo $row["select_dept"]; ?></td>
+				<td><?php echo $row["select_year"]; ?></td>
+				<td><?php echo $row["phonenumber"]; ?></td>
+				<td><?php echo $row["email"]; ?></td>
 				<td><?php echo $r["codequest"]; ?></td>
 				<td><?php echo $r["expo"]; ?></td>
 				<td><?php echo $r["quiz"]; ?></td>
