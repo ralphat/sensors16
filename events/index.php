@@ -187,9 +187,9 @@ if(isset($_COOKIE["SID"])){
 	</div>
 
 </div>
-<!--
-<div id="marquee-container"><marquee onmouseover="this.stop();" onmouseout="this.start();">Rule book updated.&nbsp;<a target="_blank" style="text-decoration:underline;color:#fff;margin-right:100%;" href="./rulebook.pdf">Click here to download rulebook</a>The deadline for paper presentaion is 6pm, 9th of March, 2016. Kindly submit it to paperpresentaion@sensors.org.in</marquee></div>
--->
+
+<div id="marquee-container"><marquee onmouseover="this.stop();" onmouseout="this.start();">The deadline for paper exposition has been extended to 8am, 8th of March, 2017. </marquee></div>
+
 <div class="fb-like" style="position:absolute;top:94.5%;right:4%;" data-href="https://www.facebook.com/sensorsNITTrichy/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 
 <div id="form-container">

@@ -36,7 +36,7 @@
 			<a target="_blank" href="http://www.uniqtechnologies.co.in/"><img class="img-responsive img-thumbnail" src="./uniq/uniq.jpg" /></a>
 		</div>
 		<div class="col-md-2 col-md-offset-8 col-sm-2 col-sm-offset-8 col-xs-3 col-xs-offset-6">
-			<div><img class="img-responsive" src="./website/icea_logo1.png" /></div>		
+			<div><img class="img-responsive" src="./website/icea_logo.png" /></div>		
 		</div>
 	</div>
 	<div class="row block1" style="z-index: 1;">
