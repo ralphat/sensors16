@@ -114,7 +114,7 @@ if(isset($_COOKIE["SID"])){
 		- Written prelims followed by finals.<br />
 		- It is a general quiz, not specific to instrumentation and control.<br />
 		- 6-8 teams qualify for finals.</p>
-		<p><b>EVENT SCHEDULE&nbsp;:&nbsp;</b>11 March 2017<br />Prelims - 2 pm to 5 pm<br />Finals - 01:30 pm to 04:00 pm</p>
+		<p><b>EVENT SCHEDULE&nbsp;:&nbsp;</b>11 March 2017<br />Prelims - 10:30 am to 12:00 pm<br />Finals - 01:30 pm to 04:00 pm</p>
 		<p><b>EVENT MANAGER&nbsp; :</b><br />Surya ( 96889 71832 )</p><br />
 		<div class="dont-show" id="quiz_r">You've registered for The Sensors General Quiz.</div>
 		<?php
