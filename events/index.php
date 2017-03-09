@@ -59,7 +59,7 @@ if(isset($_COOKIE["SID"])){
 	<button id="expo-" class="tab" onclick="change(this);">Paper Exposition</button>
 	<button id="quiz-" class="tab" onclick="change(this);">The Sensors General Quiz</button>
 	<button id="tars-" class="tab" onclick="change(this);">Find the TARS – Line Follower Event</button>
-	<button id="tbyt-" class="tab" onclick="change(this);">Trail by Tronix</button>
+	<button id="tbyt-" class="tab" onclick="change(this);">Trial by Tronix</button>
 	<button id="gif-" class="tab" onclick="change(this);">GIF Challenge</button>
 </div>
 
@@ -114,7 +114,7 @@ if(isset($_COOKIE["SID"])){
 		- Written prelims followed by finals.<br />
 		- It is a general quiz, not specific to instrumentation and control.<br />
 		- 6-8 teams qualify for finals.</p>
-		<p><b>EVENT SCHEDULE&nbsp;:&nbsp;</b>12 March 2017 - 2 pm to 5 pm</p>
+		<p><b>EVENT SCHEDULE&nbsp;:&nbsp;</b>11 March 2017<br />Prelims - 2 pm to 5 pm<br />Finals - 01:30 pm to 04:00 pm</p>
 		<p><b>EVENT MANAGER&nbsp; :</b><br />Surya ( 96889 71832 )</p><br />
 		<div class="dont-show" id="quiz_r">You've registered for The Sensors General Quiz.</div>
 		<?php
@@ -152,20 +152,20 @@ if(isset($_COOKIE["SID"])){
 	</div>
 	
 	<div id="tbyt-d" class="dont-show">
-		<h2>TRAIL BY TRONIX</h2>
+		<h2>TRIAL BY TRONIX</h2>
 		<p>For those who have been longing for an opportunity to flaunt their circuit design skills – the ultimate challenge to test your electronics knowledge is here. The event consists of two rounds: with a preliminary written round and a final hardware round. The written round will comprise of questions on basic analog, digital electronics and circuit design tasks. Around 8-10 teams will be shortlisted based on their performance to participate in the final round which involves the practical implementation of circuits for problem statements given on the spot.</p>
 		<p><a href="./Trial_By_Tronix_Description.pdf" style="color: #add8e6">Click here</a>&nbsp; for detailed description of the event.</p>
 		<p><a href="./trail_by_tronics.pdf" style="color: #add8e6">Click here</a>&nbsp; for the Rules.</p>
 		<p><a href="./trailbytronix_FAQ.pdf" style="color: #add8e6">Click here</a>&nbsp; for FAQs.</p>
-		<p><b>EVENT SCHEDULE &nbsp;:&nbsp;</b>11 March 2017<br /> First Round - 10 am to 12pm<br />Final Round - 2pm to 5pm</p>
+		<p><b>EVENT SCHEDULE &nbsp;:&nbsp;</b>12 March 2017<br /> Prelims - 11 am to 12:30 pm<br />Finals - 01:30 pm to 04:30 pm</p>
 		<p><b>EVENT MANAGERS &nbsp;:</b><br /> Krishna ( 87542 18578 )<br />Tejaswi ( 9487949352 )</p><br />
 		<div class="dont-show" id="tbyt_r">You've registered for Sensor Design.</div>
 		<?php
 			if(isset($_COOKIE['SID'])){
 			if($event['tbyt']==1)
-			echo 'You\'ve registered for Trail by Tronix.';
+			echo 'You\'ve registered for Trial by Tronix.';
 			else
-			echo '<button id="tbyt" onclick="event_register(this);">Register for Trail by Tronix</button>';
+			echo '<button id="tbyt" onclick="event_register(this);">Register for Trial by Tronix</button>';
 			}
 			else{
 			echo '<i>Kindly login to register.</i>';
@@ -188,7 +188,7 @@ if(isset($_COOKIE["SID"])){
 
 </div>
 
-<div id="marquee-container"><marquee onmouseover="this.stop();" onmouseout="this.start();">The deadline for paper exposition has been extended to 11:59 am, 8th of March, 2017. </marquee></div>
+<div id="marquee-container"><marquee onmouseover="this.stop();" onmouseout="this.start();">Event dates for Trial by Tronix and Sensors General Quiz have been changed.&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Certificates will be issued to anyone that reaches the final round of any event.</marquee></div>
 
 <div class="fb-like" style="position:absolute;top:94.5%;right:4%;" data-href="https://www.facebook.com/sensorsNITTrichy/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 
